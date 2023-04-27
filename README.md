@@ -41,9 +41,24 @@
 
 ## Project Goals
 
-### User Goals
+The aim of this project is to create an interactive game based on the classic "Rock, Paper, Scissors" game, set in the
+world of Pokémon. The game will have uncomplicated rules and two levels of difficulty to allow for both relaxing
+gameplay and challenges for more advanced players. The game interface will be easy to use, intuitive, and provide fast
+gameplay.
 
-### Site Owner Goals
+### User Goals
+- A player can play a simple and short game that has uncomplicated rules.
+- A player can try to play one of the most popular games set in the world of Pokémon.
+- A player can reminisce about their childhood and feel a wave of nostalgia.
+- A player can challenge a computer opponent in a game that has rules known to everyone.
+- A player can play on various devices.
+
+### User Goals
+- Creating an interactive game that has the potential to attract various types of players as well as Pokemon fans.
+- The game will be fast-paced and have simple rules.
+- Navigation on the website will be easy and intuitive.
+- The game will contain different levels of difficulty.
+- The game will be responsive and look nice on various devices such as computers, tablets, and mobile phones.
 
 ## User Experience
 
