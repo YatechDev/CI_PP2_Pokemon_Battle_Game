@@ -53,7 +53,7 @@ gameplay.
 - A player can challenge a computer opponent in a game that has rules known to everyone.
 - A player can play on various devices.
 
-### User Goals
+### Site Owner Goals
 - Creating an interactive game that has the potential to attract various types of players as well as Pokemon fans.
 - The game will be fast-paced and have simple rules.
 - Navigation on the website will be easy and intuitive.
