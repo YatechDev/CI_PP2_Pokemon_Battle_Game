@@ -87,6 +87,20 @@ const pokemonList = [
     },
 ];
 
+// Function for Computer Choice
+function computerPick() {
+    const randomIndex = Math.floor(Math.random() * pokemonList.length);
+    return pokemonList[randomIndex];
+}
+
+const playerChoice= document.querySelectorAll(".player-button");
+
+playerChoice.forEach((button) => {
+    button.addEventListener("click", () => {
+        const playerPokemon = button.getAttribute("data-pokemon");
+        console.log(playerPokemon);
+    });
+});
 
 // Changing player avatar for choosed pokemon
 const playerAvatar = document.getElementById('playerAvatar');
@@ -96,6 +110,7 @@ pokemonImgs.forEach((pokemon) => {
     pokemon.addEventListener('click', () => {
         const src = pokemon.querySelector('img').getAttribute('src');
         playerAvatar.querySelector('img').setAttribute('src', src);
+        const computerChoice = computerPick();
+        console.log(`Computer choose ${computerChoice.name}`)
     });
 })
-
