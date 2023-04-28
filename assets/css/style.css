@@ -1,0 +1,75 @@
+/* ==========
+GENERAL RULES
+========== */
+
+
+/* Basic reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Set font-size to 62.5% to easy maintain that 10px = 1rem */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: -webkit-linear-gradient(90deg, rgb(31, 70, 144), rgb(35, 25, 85));
+    background: linear-gradient(90deg, rgb(31, 70, 144), rgb(35, 25, 85));
+    color: #CAD6E8;
+    line-height: 1.2;
+}
+
+.outer {
+    padding: 9.6rem 0;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+/* class for quick center the heading or paragraph */
+.text-center {
+    text-align: center;
+}
+
+/* Reusable grid template to be used in project */
+.container {
+    max-width: 130em;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    background-color: #1f4690;
+    border: 2px solid #231955;
+    border-radius: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+}
+
+.grid-2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5-cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.title-head {
+    font-family: 'titlehead', sans-serif;
+    font-size: 9rem;
+    color: #fbdb04;
+    text-shadow: 5px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
