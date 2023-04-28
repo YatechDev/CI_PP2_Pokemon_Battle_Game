@@ -14,11 +14,20 @@ toggleBtn.addEventListener('click', function () {
         })
 })
 
-//Rules Modal
+//Rules Modal - opened in welcome div
 const modalRules = document.getElementById('modal-rules');
 const modalRulesCloseBtn = document.getElementById('modal-rules-close');
 
 document.getElementById('rules-btn').addEventListener('click', () => {
+    modalRules.classList.add('visible');
+})
+
+modalRulesCloseBtn.addEventListener('click', () => {
+    modalRules.classList.remove('visible');
+})
+
+// Rules Modal opened in select level div
+document.getElementById('rules2-btn').addEventListener('click', () => {
     modalRules.classList.add('visible');
 })
 
