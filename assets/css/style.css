@@ -52,7 +52,7 @@ p {
 .container {
     max-width: 100%;
     padding: 0 3.2rem;
-    margin: 20px auto;
+    margin: 20px 10px;
     background-color: #1f4690;
     border: 2px solid #231955;
     border-radius: 1.5rem;
@@ -234,6 +234,15 @@ p {
     padding: 10px;
     margin: 15px 0;
 }
+.top-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.middle-div {
+    align-items: center;
+}
 
 .pokemon {
     display: flex;
@@ -249,10 +258,23 @@ p {
 .avatar {
     display: flex;
     justify-content: center;
-    border: 1px solid #231955;
-    border-radius: 50px;
 }
 
 .avatar img {
     width: 50%;
+}
+
+.rules-btn-game {
+    /*position: absolute;*/
+    /*right: 30px;*/
+    /*padding: 10px;*/
+    /*margin: 0 auto;*/
+}
+
+.score p {
+    font-size: 3rem;
+}
+
+.game-result {
+    font-size: 4rem;
 }
