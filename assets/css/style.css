@@ -115,3 +115,29 @@ p {
 .yellow-text {
     color: #fbdb04;
 }
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #1f3290;
+    font-family: 'titlehead', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    padding: 25px 35px;
+    border: 3px solid #fafafa;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px #231955;
+}
+
+.btn:hover {
+    background-color: #fbdb04;
+    color: white;
+}
+
+.btn:active {
+    transform: translateY(4px);
+}
