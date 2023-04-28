@@ -2,6 +2,17 @@
 GENERAL RULES
 ========== */
 
+/* Page Heading font */
+@font-face {
+    font-family: titlehead;
+    src: url(/assets/fonts/blueberry_days.ttf);
+}
+/* Main Font */
+@font-face {
+    font-family: mainfont;
+    src: url(/assets/fonts/Frogie-Regular.ttf);
+}
+
 
 /* Basic reset */
 * {
