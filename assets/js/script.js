@@ -87,22 +87,7 @@ const pokemonList = [
     },
 ];
 
-// Function for Computer Choice
-function computerPick() {
-    const randomIndex = Math.floor(Math.random() * pokemonList.length);
-    return pokemonList[randomIndex];
-}
-
-const playerChoice= document.querySelectorAll(".player-button");
-
-playerChoice.forEach((button) => {
-    button.addEventListener("click", () => {
-        const playerPokemon = button.getAttribute("data-pokemon");
-        console.log(playerPokemon);
-    });
-});
-
-// Changing player avatar for choosed pokemon
+// Player Choice + start the game
 const playerAvatar = document.getElementById('playerAvatar');
 const pokemonImgs = document.querySelectorAll('.pokemon');
 
@@ -114,3 +99,13 @@ pokemonImgs.forEach((pokemon) => {
         console.log(`Computer choose ${computerChoice.name}`)
     });
 })
+
+// Function for Computer Choice
+function computerPick() {
+    const randomIndex = Math.floor(Math.random() * pokemonList.length);
+    const computerPokemon = pokemonList[randomIndex];
+    const computerAvatar = document.getElementById('computerAvatar');
+    const computerImg = computerAvatar.querySelector('img');
+    computerImg.setAttribute('src', computerPokemon.image);
+    return computerPokemon;
+}
