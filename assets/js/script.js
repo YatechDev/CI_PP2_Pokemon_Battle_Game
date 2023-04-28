@@ -59,12 +59,43 @@ if (modalAuthor) {
     })
 }
 
-const avatar = document.getElementById('playerAvatar');
-const zdjecia = document.querySelectorAll('.pokemon');
+/*
+* GAME FUNCTIONS
+*/
 
-zdjecia.forEach((pokemon) => {
+// Array with a list of Pokemon (fighters) with a source do the image of that Pokemon
+const pokemonList = [
+    {
+        name: "Fire",
+        image: "/assets/images/fire_hard.png",
+    },
+    {
+        name: "Grass",
+        image: "/assets/images/grass_hard.png",
+    },
+    {
+        name: "Ice",
+        image: "/assets/images/ice_hard.png",
+    },
+    {
+        name: "Ground",
+        image: "/assets/images/ground_hard.png",
+    },
+    {
+        name: "Rock",
+        image: "/assets/images/rock_hard.png",
+    },
+];
+
+
+// Changing player avatar for choosed pokemon
+const playerAvatar = document.getElementById('playerAvatar');
+const pokemonImgs = document.querySelectorAll('.pokemon');
+
+pokemonImgs.forEach((pokemon) => {
     pokemon.addEventListener('click', () => {
         const src = pokemon.querySelector('img').getAttribute('src');
-        avatar.querySelector('img').setAttribute('src', src);
+        playerAvatar.querySelector('img').setAttribute('src', src);
     });
 })
+
