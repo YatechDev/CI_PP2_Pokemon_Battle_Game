@@ -228,7 +228,10 @@ p {
 .game-container {
 }
 
+.top-div,
+.middle-div,
 .bottom-div {
+    padding: 10px;
     margin: 15px 0;
 }
 
@@ -241,5 +244,15 @@ p {
 
 .pokemon img {
     width: 60%;
+}
 
+.avatar {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #231955;
+    border-radius: 50px;
+}
+
+.avatar img {
+    width: 50%;
 }
