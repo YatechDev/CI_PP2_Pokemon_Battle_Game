@@ -223,3 +223,23 @@ p {
 .modal h2 {
     margin-top: 10px;
 }
+
+
+.game-container {
+}
+
+.bottom-div {
+    margin: 15px 0;
+}
+
+.pokemon {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #231955;
+    border-radius: 50px;
+}
+
+.pokemon img {
+    width: 60%;
+
+}
