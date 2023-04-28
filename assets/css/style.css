@@ -186,3 +186,40 @@ p {
 .slider-right-box {
     transform: translateX(100%);
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: rgba(31, 50, 144, 0.65);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(30px);
+    border: 1px solid black;
+    border-radius: 15px;
+    color: white;
+}
+
+
+.modal.visible {
+    display: block;
+}
+
+.btn--close {
+    cursor: pointer;
+    float: right;
+    margin: 5px 0;
+    background-color: white;
+    color: red;
+}
+
+.btn--close:hover {
+    background-color: red;
+    color: white;
+}
+
+.modal h2 {
+    margin-top: 10px;
+}

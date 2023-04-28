@@ -13,3 +13,27 @@ toggleBtn.addEventListener('click', function () {
         }, 0);
         })
 })
+
+//Rules Modal
+const modalRules = document.getElementById('modal-rules');
+const modalRulesCloseBtn = document.getElementById('modal-rules-close');
+
+document.getElementById('rules-btn').addEventListener('click', () => {
+    modalRules.classList.add('visible');
+})
+
+modalRulesCloseBtn.addEventListener('click', () => {
+    modalRules.classList.remove('visible');
+})
+
+//Author Modal
+const modalAuthor = document.getElementById('modal-author');
+const modalAuthorCloseBtn = document.getElementById('modal-author-close');
+
+document.getElementById('author-btn').addEventListener('click', () => {
+    modalAuthor.classList.add('visible');
+})
+
+modalAuthorCloseBtn.addEventListener('click', () => {
+    modalAuthor.classList.remove('visible');
+})
