@@ -29,6 +29,7 @@ html {
 body {
     background: -webkit-linear-gradient(90deg, rgb(31, 70, 144), rgb(35, 25, 85));
     background: linear-gradient(90deg, rgb(31, 70, 144), rgb(35, 25, 85));
+    font-family: 'mainfont', sans-serif;
     color: #CAD6E8;
     line-height: 1.2;
 }
@@ -78,9 +79,39 @@ p {
     grid-template-columns: repeat(5, 1fr);
 }
 
+.left-col,
+.right-col {
+    padding: 4.8rem 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    max-width: 130em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .title-head {
     font-family: 'titlehead', sans-serif;
     font-size: 9rem;
     color: #fbdb04;
     text-shadow: 5px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.logo {
+    margin-right: 50px;
+    height: 80px;
+    width: 80px;
+}
+
+.intro-img {
+    width: 100%;
+}
+
+.yellow-text {
+    color: #fbdb04;
 }
