@@ -141,3 +141,24 @@ p {
 .btn:active {
     transform: translateY(4px);
 }
+
+.level-img {
+    width: 95%;
+    filter: grayscale(80%);
+}
+
+.level-img:hover {
+    cursor: pointer;
+    filter: grayscale(0);
+    transition: all .3s ease-in-out;
+}
+
+.level-div {
+}
+
+.level-div:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(1.3);
+    position: relative;
+    z-index: 1;
+}
