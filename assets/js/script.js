@@ -44,6 +44,20 @@ if (modalRules) {
     })
 }
 
+// Rules Modal opened in hard mode game area
+const modalRulesHard = document.getElementById('modal-rules-hard-game');
+
+if (modalRulesHard) {
+    document.getElementById('rules4-btn').addEventListener('click', () => {
+        modalRulesHard.classList.add('visible');
+    })
+}
+if (modalRulesHard) {
+    modalRulesCloseBtn.addEventListener('click', () => {
+        modalRulesHard.classList.remove('visible');
+    })
+}
+
 //Author Modal
 const modalAuthor = document.getElementById('modal-author');
 const modalAuthorCloseBtn = document.getElementById('modal-author-close');
