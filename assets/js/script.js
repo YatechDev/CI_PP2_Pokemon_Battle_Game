@@ -100,8 +100,9 @@ document.addEventListener("DOMContentLoaded", function () {
             let imgSrc = pokemon.querySelector("img").getAttribute("src",);
             let imgSrc2 = pokemon.querySelector("img").getAttribute("data-type")
             playerAvatar.querySelector("img").setAttribute("src", imgSrc);
-            playerAvatar.querySelector("img").setAttribute("data-type", imgSrc2)
+            playerAvatar.querySelector("img").setAttribute("data-type", imgSrc2);
             computerPick()
+            battle()
         });
     });
 });
@@ -112,16 +113,20 @@ function computerPick() {
     let randomPokemon = Math.floor(Math.random() * pokemonList.length);
     let computerChoice = pokemonList[randomPokemon];
     let computerAvatar = document.getElementById("computerAvatar");
+
     let computerImg = computerAvatar.querySelector("img");
-    let computerImg2 = computerAvatar.querySelector("img");
     computerImg.setAttribute("src", computerChoice.image);
-    computerImg2.setAttribute("data-type", computerChoice.type)
-    battle()
+    computerImg.setAttribute("data-type", computerChoice.type);
+
+    computerAvatar.setAttribute("src", computerChoice.image);
+    computerAvatar.setAttribute("data-type", computerChoice.type);
+
+    return computerChoice;
 }
 
 function battle() {
-    let playerChoice = document.querySelector("#playerAvatar").dataset.type;
-    let computerChoice = document.querySelector("#computerAvatar").dataset.type;
+    let playerChoice = document.querySelector("#playerAvatar").getAttribute("data-type");
+    let computerChoice = document.querySelector("#computerAvatar").getAttribute("data-type");
 
     if (playerChoice === computerChoice) {
         console.log("Same Pokemons!");
