@@ -130,6 +130,7 @@ function battle() {
 
     if (playerChoice === computerChoice) {
         console.log("Same Pokemons!");
+        noWinner()
     } else if (
         playerChoice === "Fire" && (computerChoice === "Grass" || computerChoice === "Ice") ||
         playerChoice === "Grass" && (computerChoice === "Rock" || computerChoice === "Ground") ||
@@ -145,13 +146,24 @@ function battle() {
     }
 }
 
+function noWinner() {
+    document.getElementById("battleResult").innerText = "DRAW!";
+    document.getElementById("battleResult").style.color = "#fbdb04";
+}
+
 function playerWin () {
     let playerScore = parseInt(document.getElementById("playerScore").innerText);
     document.getElementById("playerScore").innerText = ++playerScore;
+    document.getElementById("battleResult").innerText = "YOU WIN!";
+    document.getElementById("battleResult").style.color = "#41dc0d";
+
 }
 
 function computerWin () {
     let computerScore = parseInt(document.getElementById("computerScore").innerText);
     document.getElementById("computerScore").innerText = ++computerScore;
+    document.getElementById("battleResult").innerText = "COMPUTER WIN!";
+    document.getElementById("battleResult").style.color = "#9d0202";
 }
+
 
