@@ -125,7 +125,7 @@ function computerPick() {
 }
 
 function battle() {
-    let playerChoice = document.querySelector("#playerAvatar").getAttribute("data-type");
+    let playerChoice = document.querySelector("#playerAvatar > img").getAttribute("data-type");
     let computerChoice = document.querySelector("#computerAvatar").getAttribute("data-type");
 
     if (playerChoice === computerChoice) {
