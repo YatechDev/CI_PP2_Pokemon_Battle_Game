@@ -292,6 +292,13 @@ p {
 .score p {
     font-size: 3rem;
 }
+.player-score p {
+    color: #41dc0d;
+}
+
+.cpu-score p {
+    color: #9d0202;
+}
 
 .game-result {
     font-size: 4rem;

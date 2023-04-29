@@ -138,8 +138,20 @@ function battle() {
         playerChoice === "Ground" && (computerChoice === "Fire" || computerChoice === "Rock")
     ) {
         console.log("Player Win!")
+        playerWin();
     } else {
         console.log("Computer Win!")
+        computerWin();
     }
+}
+
+function playerWin () {
+    let playerScore = parseInt(document.getElementById("playerScore").innerText);
+    document.getElementById("playerScore").innerText = ++playerScore;
+}
+
+function computerWin () {
+    let computerScore = parseInt(document.getElementById("computerScore").innerText);
+    document.getElementById("computerScore").innerText = ++computerScore;
 }
 
