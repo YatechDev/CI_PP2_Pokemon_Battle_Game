@@ -63,91 +63,94 @@ if (modalAuthor) {
 * GAME FUNCTIONS
 */
 
-// Array with a list of Pokemon (fighters) with a source do the image of that Pokemon
 const pokemonList = [
     {
-        name: "Fire",
+        name: "Charizard",
+        type: "Fire",
         image: "/assets/images/fire_hard.png",
     },
     {
-        name: "Grass",
+        name: "Venusaur",
+        type: "Grass",
         image: "/assets/images/grass_hard.png",
     },
     {
-        name: "Ice",
+        name: "Vulpix",
+        type: "Ice",
         image: "/assets/images/ice_hard.png",
     },
     {
-        name: "Ground",
+        name: "Cubone",
+        type: "Ground",
         image: "/assets/images/ground_hard.png",
     },
     {
-        name: "Rock",
+        name: "Graveler",
+        type: "Rock",
         image: "/assets/images/rock_hard.png",
     },
 ];
 
+document.addEventListener("DOMContentLoaded", function () {
+    let playerAvatar = document.getElementById("playerAvatar");
+    let pokemonImgs = document.querySelectorAll(".pokemon");
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     let playerAvatar = document.getElementById('playerAvatar');
-//     let pokemonImgs = document.querySelectorAll('.pokemon');
-//
-//     pokemonImgs.forEach((pokemon) => {
-//         pokemon.addEventListener('click', () => {
-//             let imgSrc = pokemon.querySelector('img').getAttribute('src');
-//             playerAvatar.querySelector('img').setAttribute('src', imgSrc);
-//         });
-//     })
-// })
+    pokemonImgs.forEach((pokemon) => {
+        pokemon.addEventListener("click", () => {
+            let imgSrc = pokemon.querySelector("img").getAttribute("src");
+            playerAvatar.querySelector("img").setAttribute("src", imgSrc);
+            computerPick()
+            battle();
+        });
+    });
+});
 
-// const = playerChoice;
-// let playerButtons = document.querySelectorAll(".player-button");
-// playerButtons.forEach((button) => {
-//     button.addEventListener("click", () => {
-//         playerChoice = button.getAttribute("data-pokemon");
-//         computerChoice = computerPick()
-//         battle();
-//         computerPick()
-//     });
-// });
+let playerChoice = document.querySelectorAll(".pokemon");
+playerChoice.forEach((button) => {
+    button.addEventListener("click", () => {
+        return playerChoice;
+    });
+});
 
 // Function for Computer Choice
-// function computerPick() {
-//     let randomPokemon = Math.floor(Math.random() * pokemonList.length);
-//     let computerChoice = pokemonList[randomPokemon];
-//     let computerAvatar = document.getElementById('computerAvatar');
-//     let computerImg = computerAvatar.querySelector('img');
-//     computerImg.setAttribute('src', computerChoice.image);
-//     return computerChoice;
-// }
+function computerPick() {
+    let randomPokemon = Math.floor(Math.random() * pokemonList.length);
+    let computerChoice = pokemonList[randomPokemon];
+    let computerAvatar = document.getElementById("computerAvatar");
+    let computerImg = computerAvatar.querySelector("img");
+    computerImg.setAttribute("src", computerChoice.image);
+    return computerChoice;
+}
 
-// function battle() {
-//     let computerChoice = computerPick();
-//
-//     if (playerChoice === computerChoice) {
-//         console.log("Same Pokemons!");
-//     } else if (
-//         playerChoice === "Fire" && (computerChoice === "Grass" || computerChoice === "Ice") ||
-//         playerChoice === "Grass" && (computerChoice === "Rock" || computerChoice === "Ground") ||
-//         playerChoice === "Rock" && (computerChoice === "Ice" || computerChoice === "Fire") ||
-//         playerChoice === "Ice" && (computerChoice === "Grass" || computerChoice === "Ground") ||
-//         playerChoice === "Ground" && (computerChoice === "Fire" || computerChoice === "Rock")
-//     ) {
-//         playerWin();
-//         console.log("Player Win!");
-//     } else {
-//         computerWin();
-//         console.log("Computer Win!");
-//     }
-// }
-// Ad a point for every time when player win.
-// function playerWin() {
-//     let playerScore = document.getElementById('playerScore');
-//     document.getElementById('playerScore').innerText = ++playerScore
-// }
-//
-// // Ad a point for every time when computer win.
-// function computerWin() {
-//     let computerScore = document.getElementById('computerScore');
-//     document.getElementById('computerScore').innerText = ++computerScore;
-// }
+//Array for html element
+let pokemonArray = [];
+const pokemonElements = document.querySelectorAll('.pokemon.player-button');
+pokemonElements.forEach(pokemon => {
+    const imgSrc = pokemon.querySelector('.pokemon-img').getAttribute('src');
+    pokemonArray.push(imgSrc);
+});
+
+console.log(pokemonArray);
+
+
+let randomPokemon= pokemonArray[Math.floor(Math.random() * pokemonArray.length)];
+let computerChoice = pokemonArray[randomPokemon];
+
+function battle() {
+    let playerChoice = document.querySelector("#playerAvatar img").getAttribute("src");
+    let computerChoice = document.querySelector("#computerAvatar img").getAttribute("src");
+
+    if (playerChoice === computerChoice) {
+        console.log("Same Pokemons!");
+    } else if (
+        playerChoice === "Fire" && (computerChoice === "Grass" || computerChoice === "Ice") ||
+        playerChoice === "Grass" && (computerChoice === "Rock" || computerChoice === "Ground") ||
+        playerChoice === "Rock" && (computerChoice === "Ice" || computerChoice === "Fire") ||
+        playerChoice === "Ice" && (computerChoice === "Grass" || computerChoice === "Ground") ||
+        playerChoice === "Ground" && (computerChoice === "Fire" || computerChoice === "Rock")
+    ) {
+        console.log("Player Win!")
+    } else {
+        console.log("Computer Win!")
+    }
+}
