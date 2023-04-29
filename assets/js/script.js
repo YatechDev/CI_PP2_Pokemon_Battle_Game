@@ -62,7 +62,7 @@ if (modalAuthor) {
 /*
 * GAME FUNCTIONS
 */
-
+//Array of Pokemon
 const pokemonList = [
     {
         name: "Charizard",
@@ -102,42 +102,22 @@ document.addEventListener("DOMContentLoaded", function () {
             playerAvatar.querySelector("img").setAttribute("src", imgSrc);
             playerAvatar.querySelector("img").setAttribute("data-type", imgSrc2)
             computerPick()
-            battle();
         });
     });
 });
 
-let playerChoice = document.querySelectorAll(".pokemon");
-playerChoice.forEach((button) => {
-    button.addEventListener("click", () => {
-        return playerChoice;
-    });
-});
 
-// Function for Computer Choice
+// Computer choose his pokemon
 function computerPick() {
     let randomPokemon = Math.floor(Math.random() * pokemonList.length);
     let computerChoice = pokemonList[randomPokemon];
     let computerAvatar = document.getElementById("computerAvatar");
     let computerImg = computerAvatar.querySelector("img");
+    let computerImg2 = computerAvatar.querySelector("img");
     computerImg.setAttribute("src", computerChoice.image);
-    computerImg.setAttribute("data-type", computerChoice.image)
-    return computerChoice;
+    computerImg2.setAttribute("data-type", computerChoice.type)
+    battle()
 }
-
-//Array for html element
-let pokemonArray = [];
-const pokemonElements = document.querySelectorAll('.pokemon.player-button');
-pokemonElements.forEach(pokemon => {
-    const imgSrc = pokemon.querySelector('.pokemon-img').getAttribute('src');
-    pokemonArray.push(imgSrc);
-});
-
-console.log(pokemonArray);
-
-
-let randomPokemon= pokemonArray[Math.floor(Math.random() * pokemonArray.length)];
-let computerChoice = pokemonArray[randomPokemon];
 
 function battle() {
     let playerChoice = document.querySelector("#playerAvatar").dataset.type;
@@ -157,3 +137,4 @@ function battle() {
         console.log("Computer Win!")
     }
 }
+
