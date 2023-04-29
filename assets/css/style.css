@@ -3,16 +3,17 @@ GENERAL RULES
 ========== */
 
 /* Page Heading font */
-@font-face {
-    font-family: titlehead;
-    src: url(/assets/fonts/blueberry_days.ttf);
-}
-/* Main Font */
-@font-face {
-    font-family: mainfont;
-    src: url(/assets/fonts/Frogie-Regular.ttf);
-}
+/*@font-face {*/
+/*    font-family: titlehead;*/
+/*    src: url(/assets/fonts/blueberry_days.ttf);*/
+/*}*/
+/*!* Main Font *!*/
+/*@font-face {*/
+/*    font-family: mainfont;*/
+/*    src: url(/assets/fonts/Frogie-Regular.ttf);*/
+/*}*/
 
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 
 /* Basic reset */
 * {
@@ -29,7 +30,7 @@ html {
 body {
     background: -webkit-linear-gradient(90deg, rgb(31, 70, 144), rgb(35, 25, 85));
     background: linear-gradient(90deg, rgb(31, 70, 144), rgb(35, 25, 85));
-    font-family: 'mainfont', sans-serif;
+    font-family: 'Titan One', cursive;
     color: #CAD6E8;
     line-height: 1.2;
     overflow: hidden;
@@ -97,7 +98,7 @@ p {
 }
 
 .title-head {
-    font-family: 'titlehead', sans-serif;
+    font-family: 'Titan One', cursive;
     font-size: 9rem;
     color: #fbdb04;
     text-shadow: 5px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -125,7 +126,7 @@ p {
 .btn {
     cursor: pointer;
     background-color: #1f3290;
-    font-family: 'titlehead', sans-serif;
+    font-family: 'Titan One', cursive;
     font-size: 2.5rem;
     color: white;
     padding: 25px 35px;
@@ -136,7 +137,8 @@ p {
 
 .btn:hover {
     background-color: #fbdb04;
-    color: white;
+    color: #1f3290;
+    border: 3px solid #231955;
 }
 
 .btn:active {
