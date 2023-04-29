@@ -124,7 +124,15 @@ function battle() {
 
     if (playerChoice === computerChoice) {
         console.log("Same Pokemons!");
+    } else if (
+        playerChoice === "Fire" && (computerChoice === "Grass" || computerChoice === "Ice") ||
+        playerChoice === "Grass" && (computerChoice === "Rock" || computerChoice === "Ground") ||
+        playerChoice === "Rock" && (computerChoice === "Ice" || computerChoice === "Fire") ||
+        playerChoice === "Ice" && (computerChoice === "Grass" || computerChoice === "Ground") ||
+        playerChoice === "Ground" && (computerChoice === "Fire" || computerChoice === "Rock")
+    ) {
+        console.log("Player Win!")
     } else {
-        console.log("Not the same Pokemons!");
+        console.log("Computer Win!")
     }
 }
