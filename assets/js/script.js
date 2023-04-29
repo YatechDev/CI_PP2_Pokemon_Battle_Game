@@ -183,8 +183,11 @@ function computerWin () {
 
 function checkScores () {
     const modalWon = document.getElementById('modal-won-game');
+    const modalLost = document.getElementById('modal-lost-game');
 
     if (document.getElementById('playerScore').innerText === "20") {
         modalWon.classList.add('visible');
+    } else if (document.getElementById('computerScore').innerText === "20") {
+        modalLost.classList.add('visible');
     }
 }
