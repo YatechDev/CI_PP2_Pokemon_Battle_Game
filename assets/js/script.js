@@ -97,8 +97,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     pokemonImgs.forEach((pokemon) => {
         pokemon.addEventListener("click", () => {
-            let imgSrc = pokemon.querySelector("img").getAttribute("src");
+            let imgSrc = pokemon.querySelector("img").getAttribute("src",);
+            let imgSrc2 = pokemon.querySelector("img").getAttribute("data-type")
             playerAvatar.querySelector("img").setAttribute("src", imgSrc);
+            playerAvatar.querySelector("img").setAttribute("data-type", imgSrc2)
             computerPick()
             battle();
         });
@@ -119,6 +121,7 @@ function computerPick() {
     let computerAvatar = document.getElementById("computerAvatar");
     let computerImg = computerAvatar.querySelector("img");
     computerImg.setAttribute("src", computerChoice.image);
+    computerImg.setAttribute("data-type", computerChoice.image)
     return computerChoice;
 }
 
