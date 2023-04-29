@@ -170,7 +170,7 @@ function playerWin () {
     document.getElementById("playerScore").innerText = ++playerScore;
     document.getElementById("battleResult").innerText = "YOU WIN!";
     document.getElementById("battleResult").style.color = "#41dc0d";
-
+    checkScores()
 }
 
 function computerWin () {
@@ -178,6 +178,13 @@ function computerWin () {
     document.getElementById("computerScore").innerText = ++computerScore;
     document.getElementById("battleResult").innerText = "COMPUTER WIN!";
     document.getElementById("battleResult").style.color = "#9d0202";
+    checkScores()
 }
 
+function checkScores () {
+    const modalWon = document.getElementById('modal-won-game');
 
+    if (document.getElementById('playerScore').innerText === "20") {
+        modalWon.classList.add('visible');
+    }
+}
