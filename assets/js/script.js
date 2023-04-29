@@ -87,25 +87,44 @@ const pokemonList = [
     },
 ];
 
-// Player Choice + start the game
-const playerAvatar = document.getElementById('playerAvatar');
-const pokemonImgs = document.querySelectorAll('.pokemon');
+document.addEventListener('DOMContentLoaded', function() {
+    let playerAvatar = document.getElementById('playerAvatar');
+    let pokemonImgs = document.querySelectorAll('.pokemon');
 
-pokemonImgs.forEach((pokemon) => {
-    pokemon.addEventListener('click', () => {
-        const src = pokemon.querySelector('img').getAttribute('src');
-        playerAvatar.querySelector('img').setAttribute('src', src);
-        const computerChoice = computerPick();
-        console.log(`Computer choose ${computerChoice.name}`)
-    });
+    pokemonImgs.forEach((pokemon) => {
+        pokemon.addEventListener('click', () => {
+            let imgSrc = pokemon.querySelector('img').getAttribute('src');
+            playerAvatar.querySelector('img').setAttribute('src', imgSrc);
+            computerPick();
+            battle();
+        });
+    })
 })
+
+let playerChoice = document.querySelectorAll(".player-button");
+
+playerChoice.forEach((button) => {
+    button.addEventListener("click", () => {
+    });
+});
 
 // Function for Computer Choice
 function computerPick() {
-    const randomIndex = Math.floor(Math.random() * pokemonList.length);
-    const computerPokemon = pokemonList[randomIndex];
-    const computerAvatar = document.getElementById('computerAvatar');
-    const computerImg = computerAvatar.querySelector('img');
-    computerImg.setAttribute('src', computerPokemon.image);
-    return computerPokemon;
+    let randomPokemon = Math.floor(Math.random() * pokemonList.length);
+    let computerChoice = pokemonList[randomPokemon];
+    let computerAvatar = document.getElementById('computerAvatar');
+    let computerImg = computerAvatar.querySelector('img');
+    computerImg.setAttribute('src', computerChoice.image);
+    return computerChoice;
+}
+
+function battle() {
+    let playerChoice = document.querySelector("#playerAvatar img").getAttribute("src");
+    let computerChoice = document.querySelector("#computerAvatar img").getAttribute("src");
+
+    if (playerChoice === computerChoice) {
+        console.log("Same Pokemons!");
+    } else {
+        console.log("Not the same Pokemons!");
+    }
 }
