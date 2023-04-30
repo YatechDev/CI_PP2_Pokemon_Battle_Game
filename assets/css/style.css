@@ -303,3 +303,8 @@ p {
 .game-result {
     font-size: 4rem;
 }
+
+/* Class to make smaller Pokemon images in easy mode */
+.easy img {
+    width: 35%;
+}

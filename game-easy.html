@@ -18,7 +18,60 @@
 
 <body>
 
-
+<main>
+    <div class="outer">
+        <div class="container">
+            <div class="game-container">
+                <div class="top-div grid grid-3-cols">
+                    <a href="index.html">
+                        <button class="btn">HOME</button>
+                    </a>
+                    <div>
+                        <audio controls>
+                            <source src="assets/audio/pokemon_theme.mp3" type="audio/ogg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <button id="rules4-btn" class="btn">RULES</button>
+                </div>
+                <div class="middle-div grid grid-3-cols">
+                    <div class="player">
+                        <div class="player-score score">
+                            <p>Player: <span id="playerScore">0</span></p>
+                        </div>
+                        <div id="playerAvatar" class="player-choice avatar">
+                            <img id="playerAvatarImg" src="assets/images/player_img.png" alt="Player avatar" data-type="0">
+                        </div>
+                    </div>
+                    <div class="result">
+                        <div class="game-result avatar">
+                            <span id="battleResult">RESULT</span>
+                        </div>
+                    </div>
+                    <div class="cpu">
+                        <div class="cpu-score score">
+                            <p>Computer: <span id="computerScore">0</span></p>
+                        </div>
+                        <div id="computerAvatar" class="cpu-choice avatar">
+                            <img src="assets/images/cpu_img.png" alt="Computer avatar" data-type="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-div grid grid-3-cols">
+                    <div class="pokemon easy">
+                        <img class="pokemon-img" src="assets/images/fire_easy.png" alt="Fire" data-type="Fire">
+                    </div>
+                    <div class="pokemon easy">
+                        <img class="pokemon-img" src="assets/images/water_easy.png" alt="Grass" data-type="Water">
+                    </div>
+                    <div class="pokemon easy">
+                        <img class="pokemon-img" src="assets/images/grass_easy.png" alt="Ice" data-type="Grass">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 
 <!-- SCRIPTS -->
     <script src="assets/js/game-easy.js"></script>
