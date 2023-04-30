@@ -2,17 +2,7 @@
 GENERAL RULES
 ========== */
 
-/* Page Heading font */
-/*@font-face {*/
-/*    font-family: titlehead;*/
-/*    src: url(/assets/fonts/blueberry_days.ttf);*/
-/*}*/
-/*!* Main Font *!*/
-/*@font-face {*/
-/*    font-family: mainfont;*/
-/*    src: url(/assets/fonts/Frogie-Regular.ttf);*/
-/*}*/
-
+/* Fonts imported from Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Permanent+Marker&family=Russo+One&family=Titan+One&display=swap');
 
 /* Basic reset */
@@ -81,6 +71,7 @@ p {
     grid-template-columns: repeat(5, 1fr);
 }
 
+/* Template for columns inside of the container/grid container */
 .left-col,
 .middle-col,
 .right-col {
@@ -89,6 +80,10 @@ p {
     justify-content: center;
     align-items: center;
 }
+
+/* ==========
+Main page with a slider
+========== */
 
 .heading {
     max-width: 130rem;
@@ -111,14 +106,17 @@ p {
     width: 8rem;
 }
 
+/* Picture of Ahs with Pikachu */
 .intro-img {
     width: 100%;
 }
 
+/* Use to change some texts across the pge */
 .yellow-text {
     color: #fbdb04;
 }
 
+/* Buttons */
 .buttons {
     display: flex;
     justify-content: space-around;
@@ -189,6 +187,10 @@ p {
     transform: translateX(100%);
 }
 
+/* ==========
+GENERAL RULES
+========== */
+
 .modal {
     width: 160rem;
     display: none;
@@ -204,7 +206,6 @@ p {
     border-radius: 1.5rem;
     color: white;
 }
-
 
 .modal.visible {
     display: block;
@@ -229,98 +230,23 @@ p {
     margin-top: 1rem;
 }
 
-
-.game-container {
-}
-
-.top-div,
-.middle-div,
-.bottom-div {
-    padding: 1rem;
-    margin: 1.5rem 0;
-}
-.top-div {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.middle-div {
-    align-items: center;
-}
-
-.pokemon {
-    display: flex;
-    justify-content: center;
-
-}
-
-.pokemon img {
-    width: 60%;
-    filter: grayscale(90%);
-}
-
-.pokemon img:hover {
-    cursor: pointer;
-    filter: grayscale(0);
-    transition: all .3s ease-in-out;
-}
-
-.pokemon:hover {
-    transition: all .3s ease-in-out;
-    transform: scale(1.3);
-    position: relative;
-    z-index: 1;
-    border: 1px solid #231955;
-    border-radius: 5rem;
-}
-
-
-.avatar {
-    display: flex;
-    justify-content: center;
-}
-
-.avatar img {
-    width: 50%;
-}
-
-.rules-btn-game {
-    /*position: absolute;*/
-    /*right: 30px;*/
-    /*padding: 10px;*/
-    /*margin: 0 auto;*/
-}
-.score {
-    text-align: center;
-}
-
-.score p {
-    font-size: 3rem;
-}
-.player-score p {
-    color: #41dc0d;
-}
-
-.cpu-score p {
-    color: #9d0202;
-}
-
-.game-result {
-    font-size: 4rem;
-}
-
-/* Class to make smaller Pokemon images in easy mode */
-.easy img {
-    width: 35%;
-}
-
 .rules-heading {
     font-size: 3rem;
 }
 
 .rules-image img {
     width: 95%;
+}
+
+.rules-description {
+    padding: 4.8rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules-description p {
+    font-size: 2rem;
 }
 
 /* Classess created  for spans in rules modal */
@@ -347,39 +273,7 @@ p {
     color: #589EA3;
 }
 
-.music-btn {
-    cursor: pointer;
-    background-color: #1f3290;
-    color: white;
-    font-size: 3rem;
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
-    border: 2px solid #fafafa;
-    box-shadow: 0 1.5rem 3.5rem #231955;
-}
-
-.music-btn:hover {
-    background-color: #fbdb04;
-    color: #1f3290;
-    border: 3px solid #231955;
-}
-
-.music-btn:active {
-    transform: translateY(4px);
-}
-
-.audio-div {
-    display: grid;
-    margin: 0 auto;
-}
-
-.audio-buttons-div {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 1rem;
-}
-
+/* Author Modal */
 .yatech-div {
     display: flex;
     flex-direction: column ;
@@ -406,15 +300,118 @@ p {
     z-index: 1;
 }
 
-.rules-description {
-    padding: 4.8rem 0;
+/* ==========
+GAME AREA
+========== */
+
+.top-div,
+.middle-div,
+.bottom-div {
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+.top-div {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.middle-div {
     align-items: center;
 }
 
-.rules-description p {
-    font-size: 2rem;
+/* List of pokemons in game area */
+.pokemon {
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon img {
+    width: 60%;
+    filter: grayscale(90%);
+}
+
+.pokemon img:hover {
+    cursor: pointer;
+    filter: grayscale(0);
+    transition: all .3s ease-in-out;
+}
+
+.pokemon:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(1.3);
+    position: relative;
+    z-index: 1;
+    border: 1px solid #231955;
+    border-radius: 5rem;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+}
+
+.avatar img {
+    width: 50%;
+}
+
+.score {
+    text-align: center;
+}
+
+.score p {
+    font-size: 3rem;
+}
+.player-score p {
+    color: #41dc0d;
+}
+
+.cpu-score p {
+    color: #9d0202;
+}
+
+.game-result {
+    font-size: 4rem;
+}
+
+/* Class to make smaller Pokemon images in easy mode */
+.easy img {
+    width: 35%;
+}
+
+/* Audio */
+
+.audio-div {
+    display: grid;
+    margin: 0 auto;
+}
+
+.audio-buttons-div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.music-btn {
+    cursor: pointer;
+    background-color: #1f3290;
+    color: white;
+    font-size: 3rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    border: 2px solid #fafafa;
+    box-shadow: 0 1.5rem 3.5rem #231955;
+}
+
+.music-btn:hover {
+    background-color: #fbdb04;
+    color: #1f3290;
+    border: 3px solid #231955;
+}
+
+.music-btn:active {
+    transform: translateY(4px);
 }
 
 /* ==========
@@ -424,6 +421,9 @@ MEDIA QUERIES
 /* Smaller desktops & laptops */
 @media (max-width: 1344px) {
 
+    .container {
+        max-width: 110rem;
+    }
 }
 
 /* Landscape tablets */
@@ -444,6 +444,18 @@ MEDIA QUERIES
 /* Phones */
 @media (max-width: 544px) {
 
+    .heading {
+        justify-content: space-around;
+    }
+
+    .title-head {
+        font-size: 2.2rem;
+    }
+
+    .logo {
+        height: 4rem;
+        width: 4rem;
+    }
 }
 
 /* Small phones */
