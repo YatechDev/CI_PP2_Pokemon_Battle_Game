@@ -13,7 +13,7 @@ GENERAL RULES
 /*    src: url(/assets/fonts/Frogie-Regular.ttf);*/
 /*}*/
 
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Permanent+Marker&family=Russo+One&family=Titan+One&display=swap');
 
 /* Basic reset */
 * {
@@ -30,7 +30,7 @@ html {
 body {
     background: -webkit-linear-gradient(90deg, rgb(31, 70, 144), rgb(35, 25, 85));
     background: linear-gradient(90deg, rgb(31, 70, 144), rgb(35, 25, 85));
-    font-family: 'Titan One', cursive;
+    font-family: 'Russo One', sans-serif;
     color: #CAD6E8;
     line-height: 1.2;
     overflow: hidden;
@@ -98,7 +98,7 @@ p {
 }
 
 .title-head {
-    font-family: 'Titan One', cursive;
+    font-family: 'Lilita One', cursive;
     font-size: 9rem;
     color: #fbdb04;
     text-shadow: 5px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -126,7 +126,7 @@ p {
 .btn {
     cursor: pointer;
     background-color: #1f3290;
-    font-family: 'Titan One', cursive;
+    font-family: 'Lilita One', cursive;
     font-size: 2.5rem;
     color: white;
     padding: 25px 35px;
