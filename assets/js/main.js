@@ -58,6 +58,20 @@ if (modalRulesHard) {
     })
 }
 
+// Rules Modal opened in easy mode game area
+const modalRulesEasy = document.getElementById('modal-rules-easy-game');
+
+if (modalRulesEasy) {
+    document.getElementById('rules3-btn').addEventListener('click', () => {
+        modalRulesEasy.classList.add('visible');
+    })
+}
+if (modalRulesEasy) {
+    modalRulesCloseBtn.addEventListener('click', () => {
+        modalRulesEasy.classList.remove('visible');
+    })
+}
+
 //Author Modal
 const modalAuthor = document.getElementById('modal-author');
 const modalAuthorCloseBtn = document.getElementById('modal-author-close');
