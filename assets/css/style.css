@@ -308,3 +308,21 @@ p {
 .easy img {
     width: 35%;
 }
+
+.rules-heading {
+    font-size: 3rem;
+}
+
+.rules-image img {
+    width: 98%;
+}
+
+.rules-image img:hover {
+    background-color: #1f4690;
+    border: 1px solid #231955;
+    border-radius: 15px;
+    transition: all .3s ease-in-out;
+    transform: scale(1.8);
+    position: relative;
+    z-index: 1;
+}
