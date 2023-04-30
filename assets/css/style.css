@@ -53,7 +53,7 @@ p {
 .container {
     max-width: 100%;
     padding: 0 3.2rem;
-    margin: 20px 10px;
+    margin: 2rem 1rem;
     background-color: #1f4690;
     border: 2px solid #231955;
     border-radius: 1.5rem;
@@ -91,7 +91,7 @@ p {
 }
 
 .heading {
-    max-width: 130em;
+    max-width: 130rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -106,9 +106,9 @@ p {
 }
 
 .logo {
-    margin-right: 50px;
-    height: 80px;
-    width: 80px;
+    margin-right: 5rem;
+    height: 8rem;
+    width: 8rem;
 }
 
 .intro-img {
@@ -130,7 +130,7 @@ p {
     font-family: 'Lilita One', cursive;
     font-size: 2.5rem;
     color: white;
-    padding: 25px 35px;
+    padding: 2.5rem 3.5rem;
     border: 3px solid #fafafa;
     border-radius: 25px;
     box-shadow: 0 15px 35px #231955;
@@ -177,7 +177,7 @@ p {
 .slider-right-box {
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2rem;
     transition: transform 0.5s ease;
     position: absolute;
     top: 0;
@@ -201,7 +201,7 @@ p {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(30px);
     border: 1px solid black;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     color: white;
 }
 
@@ -213,8 +213,8 @@ p {
 .btn--close {
     cursor: pointer;
     float: right;
-    margin: 5px 0;
-    padding: 3px 3px;
+    margin: 0.5rem 0;
+    padding: 0.3rem 0.3rem;
     background-color: red;
     color: white;
     font-size: 2rem;
@@ -226,7 +226,7 @@ p {
 }
 
 .modal h2 {
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 
@@ -236,8 +236,8 @@ p {
 .top-div,
 .middle-div,
 .bottom-div {
-    padding: 10px;
-    margin: 15px 0;
+    padding: 1rem;
+    margin: 1.5rem 0;
 }
 .top-div {
     display: flex;
@@ -272,7 +272,7 @@ p {
     position: relative;
     z-index: 1;
     border: 1px solid #231955;
-    border-radius: 50px;
+    border-radius: 5rem;
 }
 
 
@@ -352,11 +352,11 @@ p {
     background-color: #1f3290;
     color: white;
     font-size: 3rem;
-    height: 60px;
-    width: 60px;
+    height: 6rem;
+    width: 6rem;
     border-radius: 50%;
     border: 2px solid #fafafa;
-    box-shadow: 0 15px 35px #231955;
+    box-shadow: 0 1.5rem 3.5rem #231955;
 }
 
 .music-btn:hover {
@@ -377,7 +377,7 @@ p {
 .audio-buttons-div {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .yatech-div {
@@ -415,4 +415,38 @@ p {
 
 .rules-description p {
     font-size: 2rem;
+}
+
+/* ==========
+MEDIA QUERIES
+========== */
+
+/* Smaller desktops & laptops */
+@media (max-width: 1344px) {
+
+}
+
+/* Landscape tablets */
+@media (max-width: 1200px) {
+
+}
+
+/* Tablets */
+@media (max-width: 944px) {
+
+}
+
+/* Small tablets */
+@media (max-width: 704px) {
+
+}
+
+/* Phones */
+@media (max-width: 544px) {
+
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+
 }
