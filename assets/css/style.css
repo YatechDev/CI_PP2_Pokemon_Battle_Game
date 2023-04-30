@@ -341,3 +341,14 @@ p {
 .color-water {
     color: #589EA3;
 }
+
+.music-btn {
+    cursor: pointer;
+    background-color: #fbdb04;
+    color: #1f3290;
+    font-size: 5rem;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid #231955;
+}

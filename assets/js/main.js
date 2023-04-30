@@ -87,4 +87,32 @@ if (modalAuthor) {
     })
 }
 
+//Music on the page
+let x = document.getElementById("myAudio");
+let playBtn = document.getElementById("playBtn");
+let pauseBtn = document.getElementById("pauseBtn");
+let stopBtn = document.getElementById("stopBtn");
+let volumeSlider = document.getElementById("volumeSlider");
+
+playBtn.addEventListener("click", playAudio);
+pauseBtn.addEventListener("click", pauseAudio);
+stopBtn.addEventListener("click", stopAudio);
+volumeSlider.addEventListener("input", adjustVolume);
+
+function playAudio() {
+    x.play();
+}
+
+function pauseAudio() {
+    x.pause();
+}
+
+function stopAudio() {
+    x.currentTime = 0;
+    x.pause();
+}
+
+function adjustVolume() {
+    x.volume = volumeSlider.value;
+}
 
