@@ -147,7 +147,7 @@ p {
 }
 
 .level-img {
-    width: 95%;
+    width: 90%;
     filter: grayscale(80%);
 }
 
@@ -157,8 +157,6 @@ p {
     transition: all .3s ease-in-out;
 }
 
-.level-div {
-}
 
 .level-div:hover {
     transition: all .3s ease-in-out;
@@ -178,6 +176,7 @@ p {
 .slider-left-box,
 .slider-right-box {
     width: 100%;
+    margin: 0 auto;
     padding: 20px;
     transition: transform 0.5s ease;
     position: absolute;
