@@ -318,4 +318,26 @@ p {
     width: 95%;
 }
 
+/* Classess created  for spans in rules modal */
+.color-fire {
+    color: #EA7A29;
+}
+.color-grass {
+    color: #7EA640
+}
 
+.color-rock {
+    color: #8B8A80;
+}
+
+.color-ice {
+    color: #DFF1FA;
+}
+
+.color-ground {
+    color: #DBCDB7;
+}
+
+.color-water {
+    color: #589EA3;
+}
