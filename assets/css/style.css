@@ -291,6 +291,9 @@ p {
     /*padding: 10px;*/
     /*margin: 0 auto;*/
 }
+.score {
+    text-align: center;
+}
 
 .score p {
     font-size: 3rem;
