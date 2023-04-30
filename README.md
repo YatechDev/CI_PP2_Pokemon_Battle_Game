@@ -4,7 +4,7 @@
 
 ![Mockup image]()
 
-[Live webpage]()
+[Pokemon Battle Game - Live webpage](https://yatechdev.github.io/CI_PP2_Pokemon_Battle_Game/index.html) (Right click to open in new tab)
 
 ## Table of Content
 
