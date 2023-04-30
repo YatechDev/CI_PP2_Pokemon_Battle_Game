@@ -94,25 +94,30 @@ let pauseBtn = document.getElementById("pauseBtn");
 let stopBtn = document.getElementById("stopBtn");
 let volumeSlider = document.getElementById("volumeSlider");
 
-playBtn.addEventListener("click", playAudio);
-pauseBtn.addEventListener("click", pauseAudio);
-stopBtn.addEventListener("click", stopAudio);
-volumeSlider.addEventListener("input", adjustVolume);
+const music = document.getElementById('myAudio');
 
-function playAudio() {
-    x.play();
-}
+if (music) {
 
-function pauseAudio() {
-    x.pause();
-}
+    playBtn.addEventListener("click", playAudio);
+    pauseBtn.addEventListener("click", pauseAudio);
+    stopBtn.addEventListener("click", stopAudio);
+    volumeSlider.addEventListener("input", adjustVolume);
 
-function stopAudio() {
-    x.currentTime = 0;
-    x.pause();
-}
+    function playAudio() {
+        x.play();
+    }
 
-function adjustVolume() {
-    x.volume = volumeSlider.value;
+    function pauseAudio() {
+        x.pause();
+    }
+
+    function stopAudio() {
+        x.currentTime = 0;
+        x.pause();
+    }
+
+    function adjustVolume() {
+        x.volume = volumeSlider.value;
+    }
 }
 
