@@ -190,6 +190,7 @@ p {
 }
 
 .modal {
+    width: 160rem;
     display: none;
     position: fixed;
     top: 50%;
@@ -314,15 +315,7 @@ p {
 }
 
 .rules-image img {
-    width: 98%;
+    width: 95%;
 }
 
-.rules-image img:hover {
-    background-color: #1f4690;
-    border: 1px solid #231955;
-    border-radius: 15px;
-    transition: all .3s ease-in-out;
-    transform: scale(1.8);
-    position: relative;
-    z-index: 1;
-}
+

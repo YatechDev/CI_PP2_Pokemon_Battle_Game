@@ -76,21 +76,49 @@
 
 <!-- MODALS -->
 <!-- Rules Modal -->
-    <div id="modal-rules-easy-game" class="modal container">
-        <button id="modal-rules-close" class="btn--close"><i class="fa-solid fa-xmark"></i></button>
-        <h2 class="text-center">RULES</h2>
-        <br><hr><br>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi atque aut consequuntur
-            deserunt, dolorem eos excepturi impedit molestias non numquam pariatur possimus quam quia quis,
-            quos velit voluptas voluptatibus.
-        </p>
-        <p >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi atque aut consequuntur
-            deserunt, dolorem eos excepturi impedit molestias non numquam pariatur possimus quam quia quis,
-            quos velit voluptas voluptatibus.
-        </p>
+<div id="modal-rules-easy-game" class="modal container">
+    <button id="modal-rules-close" class="btn--close"><i class="fa-solid fa-xmark"></i></button>
+    <h2 class="text-center rules-heading">RULES</h2>
+    <br><hr><br>
+    <div class="grid grid grid-3-cols">
+        <div class="rules-image">
+            <img src="assets/images/rules_easy.png" alt="Rules in easy game">
+            <p class="text-center">
+                FIRE beats GRASS.
+                <br><br>
+                GRASS beats WATER.
+                <br><br>
+                WATER beats FIRE.
+                <br><br>
+            </p>
+        </div>
+        <div class="">
+            <p>
+                1. In the Pokemon Battle Game, the player fights against the computer.
+                <br> <br>
+                2. In case of a battle between two identical pokemon, the result is a draw.
+                <br> <br>
+                3. The game is won by the person who first wins 20 battles. Good luck in the game!
+                <br> <br>
+                4. Enjoy!
+            </p>
+        </div>
+        <div class="rules-image">
+            <img src="assets/images/rules_hard.png" alt="Rules in hard game">
+            <p class="text-center">
+                FIRE beats GRASS and ICE.
+                <br><br>
+                GRASS beats ROCK and GROUND.
+                <br><br>
+                ROCK beats ICE and FIRE.
+                <br><br>
+                ICE beats GRASS and GROUND.
+                <br><br>
+                GROUND beats FIRE and ROCK.
+            </p>
+        </div>
     </div>
+</div>
 
     <!-- You WON the battle modal -->
     <div id="modal-won-game" class="modal container">
