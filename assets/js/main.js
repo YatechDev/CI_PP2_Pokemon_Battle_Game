@@ -2,35 +2,44 @@
 * MODALS
  */
 
-//Rules Modal
 const modalRules = document.getElementById('modal-rules');
-const modalRulesCloseBtn = document.getElementById('modal-rules-close');
+const openRules = document.getElementById('rules-btn');
+const closeRules = document.getElementById('modal-rules-close');
 
 if (modalRules) {
-    document.getElementById('rules-btn').addEventListener('click', () => {
+    openRules.addEventListener('click', () => {
         modalRules.classList.add('visible');
-    })
-}
+    });
 
-if (modalRules) {
-    modalRulesCloseBtn.addEventListener('click', () => {
+    closeRules.addEventListener('click', () => {
         modalRules.classList.remove('visible');
-    })
+    });
+
+    window.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            modalRules.classList.remove('visible');
+        }
+    });
 }
 
-//Author Modal
 const modalAuthor = document.getElementById('modal-author');
-const modalAuthorCloseBtn = document.getElementById('modal-author-close');
+const openAuthor = document.getElementById('author-btn');
+const closeAuthor = document.getElementById('modal-author-close');
 
 if (modalAuthor) {
-    document.getElementById('author-btn').addEventListener('click', () => {
+    openAuthor.addEventListener('click', () => {
         modalAuthor.classList.add('visible');
-    })
-}
-if (modalAuthor) {
-    modalAuthorCloseBtn.addEventListener('click', () => {
+    });
+
+    closeAuthor.addEventListener('click', () => {
         modalAuthor.classList.remove('visible');
-    })
+    });
+
+    window.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            modalAuthor.classList.remove('visible');
+        }
+    });
 }
 
 //Music on the page
