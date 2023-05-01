@@ -101,6 +101,25 @@ body {
     transform: translateY(4px);
 }
 
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn a:hover {
+    color: #1f3290;
+}
+
+.btn a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.btn a:visited {
+    text-transform: none;
+    text-decoration: none;
+}
+
 .level-img {
     margin: 3rem auto;
 }
@@ -432,10 +451,6 @@ MEDIA QUERIES
 /* Tablet Portrait */
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
-}
-
-/* Mobile Landscape */
-@media screen and (min-width: 321px) and (max-width: 480px) {
     .container {
         display: flex;
         flex-direction: column;
@@ -457,8 +472,81 @@ MEDIA QUERIES
         font-size: 1.5rem;
     }
 
-    .buttons {
+    .btn {
+        font-size: 1.2rem;
+        margin: 0 0.5rem;
+        padding: 2rem 3rem;
+    }
 
+    .right-column p {
+        text-align: center;
+    }
+
+    .level-img{
+        width: 30rem;
+        filter: grayscale(0);
+    }
+
+    .level-img:hover {
+        transition: none;
+        transform: none;
+        position: relative;
+        z-index: 1;
+    }
+
+    .levels-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .level-description {
+        order: 1;
+    }
+
+    .easy-level {
+        order: 2;
+    }
+
+    .hard-level {
+        order: 3;
+    }
+
+    .level-description :nth-child(6),
+    .level-description :nth-child(7),
+    .level-description :nth-child(8) {
+        display: none;
+    }
+
+    .level-description .buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+/* Mobile Landscape */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 1rem;
+    }
+
+    .intro-image {
+        width: 100%;
+    }
+
+    .heading img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
     }
 
     .btn {
