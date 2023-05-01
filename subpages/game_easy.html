@@ -26,8 +26,12 @@
                 </a>
             </div>
             <div class="audio-div">
-                <audio id="myAudio">
-                    <source src="../assets/audio/pokemon_theme.mp3" type="audio/ogg">
+                <audio id="myAudio" preload="auto" loop>
+                    <source src="../assets/audio/pokemon_theme.mp3" type="audio/mpeg">
+                    <source src="../assets/audio/pokemon_theme.ogg" type="audio/ogg">
+                    <source src="../assets/audio/pokemon_theme.wav" type="audio/wav">
+                    <source src="../assets/audio/pokemon_theme.aac" type="audio/aac">
+                    <source src="../assets/audio/pokemon_theme.flac" type="audio/flac">
                     Your browser does not support the audio element.
                 </audio>
                 <p>Click the buttons to play, pause, or stop the audio.</p>
