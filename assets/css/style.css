@@ -344,6 +344,8 @@ GAME AREA
     width: 80rem;
     display: none;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     gap: 5rem;
     padding: 2rem 0;
     position: fixed;
