@@ -22,104 +22,61 @@ body {
     background: linear-gradient(90deg, rgb(31, 70, 144), rgb(35, 25, 85));
     font-family: 'Russo One', sans-serif;
     color: #CAD6E8;
+    font-size: 2rem;
     line-height: 1.2;
-    overflow: hidden;
 }
 
-.outer {
-    padding: 9.6rem 0;
-}
-
-p {
-    font-size: 1.8rem;
-}
-
-/* class for quick center the heading or paragraph */
 .text-center {
     text-align: center;
 }
 
-/* Reusable grid template to be used in project */
+.yellow-text {
+    color: #fbdb04;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem auto;
+    font-family: 'Lilita One', cursive;
+    font-size: 4rem;
+    color: #fbdb04;
+    text-shadow: 5px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.heading img {
+    height: 7rem;
+    width: 7rem;
+}
+
 .container {
-    max-width: 100%;
+    max-width: 160rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 3.2rem;
-    margin: 2rem 1rem;
+    margin: 2rem auto;
     background-color: #1f4690;
     border: 2px solid #231955;
     border-radius: 1.5rem;
 }
 
-.grid {
-    display: grid;
-    column-gap: 6.4rem;
-    row-gap: 9.6rem;
+.left-column,
+.middle-column,
+.right-column {
+    margin: 2rem 2rem;
 }
 
-.grid-2-cols {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-3-cols {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-4-cols {
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.grid-5-cols {
-    grid-template-columns: repeat(5, 1fr);
-}
-
-/* Template for columns inside of the container/grid container */
-.left-col,
-.middle-col,
-.right-col {
-    padding: 4.8rem 0;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-/* ==========
-Main page with a slider
-========== */
-
-.heading {
-    max-width: 130rem;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.title-head {
-    font-family: 'Lilita One', cursive;
-    font-size: 9rem;
-    color: #fbdb04;
-    text-shadow: 5px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.logo {
-    margin-right: 5rem;
-    height: 8rem;
-    width: 8rem;
-}
-
-/* Picture of Ahs with Pikachu */
-.intro-img {
-    width: 100%;
-}
-
-/* Use to change some texts across the pge */
-.yellow-text {
-    color: #fbdb04;
+.intro-image {
+    width: 70rem;
 }
 
 /* Buttons */
 .buttons {
     display: flex;
     justify-content: space-around;
+    margin: 2rem auto;
 }
 
 .btn {
@@ -128,7 +85,7 @@ Main page with a slider
     font-family: 'Lilita One', cursive;
     font-size: 2.5rem;
     color: white;
-    padding: 2.5rem 3.5rem;
+    padding: 1.5rem 2.5rem;
     border: 3px solid #fafafa;
     border-radius: 25px;
     box-shadow: 0 15px 35px #231955;
@@ -145,7 +102,10 @@ Main page with a slider
 }
 
 .level-img {
-    width: 90%;
+    margin: 3rem auto;
+}
+
+.level-img {
     filter: grayscale(80%);
 }
 
@@ -153,51 +113,19 @@ Main page with a slider
     cursor: pointer;
     filter: grayscale(0);
     transition: all .3s ease-in-out;
-}
-
-
-.level-div:hover {
-    transition: all .3s ease-in-out;
     transform: scale(1.3);
     position: relative;
     z-index: 1;
 }
 
-.slider-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    width: 100%;
-}
-
-.slider-left-box,
-.slider-right-box {
-    width: 100%;
-    margin: 0 auto;
-    padding: 2rem;
-    transition: transform 0.5s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.slider-right-box {
-    transform: translateX(100%);
-}
-
-/* ==========
-GENERAL RULES
-========== */
-
+/* Modal will be displayed by js event after click on rules button */
 .modal {
-    width: 160rem;
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 160rem;
     z-index: 1;
     background: rgba(31, 50, 144, 0.65);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
@@ -205,6 +133,40 @@ GENERAL RULES
     border: 1px solid black;
     border-radius: 1.5rem;
     color: white;
+}
+
+.modal-heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+.modal.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.modal-container {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-left-column,
+.modal-middle-column,
+.modal-right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.rules-image img {
+    width: 50%;
 }
 
 .modal.visible {
@@ -226,33 +188,15 @@ GENERAL RULES
     background-color: darkred;
 }
 
-.modal h2 {
-    margin-top: 1rem;
+.btn--close:active {
+    transform: translateY(4px);
 }
 
-.rules-heading {
-    font-size: 3rem;
-}
-
-.rules-image img {
-    width: 95%;
-}
-
-.rules-description {
-    padding: 4.8rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.rules-description p {
-    font-size: 2rem;
-}
-
-/* Classess created  for spans in rules modal */
+/* Classes created  for spans in rules modal */
 .color-fire {
     color: #EA7A29;
 }
+
 .color-grass {
     color: #7EA640
 }
@@ -276,19 +220,21 @@ GENERAL RULES
 /* Author Modal */
 .yatech-div {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: 5rem 5rem;
 }
 
 .yatech-div img {
-    width: 50%;
+    width: 40rem;
     border-radius: 25%;
-    /*margin: 0 auto;*/
+    margin: 3rem 3rem;
 }
 
 .yatech-div a {
     text-decoration: none;
+    font-size: 3.5rem;
     color: #fbdb04;
     text-shadow: 3px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -304,20 +250,37 @@ GENERAL RULES
 GAME AREA
 ========== */
 
+.game-area {
+    max-width: 180rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 3.2rem;
+    margin: 2rem auto;
+    background-color: #1f4690;
+    border: 2px solid #231955;
+    border-radius: 1.5rem;
+}
+
 .top-div,
 .middle-div,
 .bottom-div {
+    display: flex;
     padding: 1rem;
     margin: 1.5rem 0;
 }
+
 .top-div {
-    display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .middle-div {
     align-items: center;
+    justify-content: space-around;
+}
+
+.bottom-div {
+    justify-content: space-evenly;
 }
 
 /* List of pokemons in game area */
@@ -346,13 +309,8 @@ GAME AREA
     border-radius: 5rem;
 }
 
-.avatar {
-    display: flex;
-    justify-content: center;
-}
-
 .avatar img {
-    width: 50%;
+    width: 90%;
 }
 
 .score {
@@ -362,6 +320,7 @@ GAME AREA
 .score p {
     font-size: 3rem;
 }
+
 .player-score p {
     color: #41dc0d;
 }
@@ -376,7 +335,41 @@ GAME AREA
 
 /* Class to make smaller Pokemon images in easy mode */
 .easy img {
-    width: 35%;
+    width: 70%;
+}
+
+/* Classes for modals after the game end */
+.modal-won,
+.modal-lost {
+    width: 80rem;
+    display: none;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 2rem 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: rgba(31, 50, 144, 0.65);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(30px);
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    color: white;
+}
+
+.modal-won.visible,
+.modal-lost.visible {
+    display: flex;
+}
+
+.modal-won {
+    color: #41dc0d;
+}
+
+.modal-lost {
+    color: darkred;
 }
 
 /* Audio */
@@ -412,53 +405,4 @@ GAME AREA
 
 .music-btn:active {
     transform: translateY(4px);
-}
-
-/* ==========
-MEDIA QUERIES
-========== */
-
-/* Smaller desktops & laptops */
-@media (max-width: 1344px) {
-
-    .container {
-        max-width: 110rem;
-    }
-}
-
-/* Landscape tablets */
-@media (max-width: 1200px) {
-
-}
-
-/* Tablets */
-@media (max-width: 944px) {
-
-}
-
-/* Small tablets */
-@media (max-width: 704px) {
-
-}
-
-/* Phones */
-@media (max-width: 544px) {
-
-    .heading {
-        justify-content: space-around;
-    }
-
-    .title-head {
-        font-size: 2.2rem;
-    }
-
-    .logo {
-        height: 4rem;
-        width: 4rem;
-    }
-}
-
-/* Small phones */
-@media (max-width: 400px) {
-
 }

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Pokemon Battle Game!">
+    <meta name="keywords" content="pokemon, pokemon fans, pokemon mini game, pokemon battle, browser game">
+    <meta name="author" content="YatechDev">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <!-- Title -->
+    <title>PBG - Choose level</title>
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="heading">
+            <a href="../index.html"><img src="../assets/images/logo.png" alt="Pokemon logo"></a>
+            <h1>Choose your level !</h1>
+        </div>
+        <div class="container levels-container">
+            <div class="left-column easy-level">
+                <a href="./game_easy.html">
+                    <img class="level-img" src="../assets/images/level_easy.png" alt="Easy level option">
+                </a>
+            </div>
+            <div class="middle-column level-description">
+                <p class="text-center">
+                    If you want to play without significant challenges, we recommend choosing the easy mode!
+                    However, if
+                    you're looking for a more demanding adventure, we encourage you to select the hard mode!
+                    Keep in
+                    mind that the choice of game mode can affect the level of enjoyment and excitement you
+                    experience
+                    during gameplay, so it's worth considering your options carefully.
+                </p>
+                <br>
+                <hr>
+                <br>
+                <p class="text-center">Click on the left or right image to choose the level!</p>
+                <br>
+                <br>
+                <br>
+                <div class="buttons">
+                    <a href="../index.html">
+                        <button class="btn">HOME</button>
+                    </a>
+                    <button id="rules-btn" class="btn">RULES</button>
+                    <br>
+                </div>
+            </div>
+            <div class="right-column hard-level">
+                <a href="./game_hard.html">
+                    <img class="level-img" src="../assets/images/level_hard.png" alt="Easy level option">
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- MODALS -->
+    <!-- Rules Modal -->
+    <div id="modal-rules" class="modal">
+        <div class="modal-heading">
+            <h2 class="text-center modal-title">RULES</h2>
+            <div>
+                <button id="modal-rules-close" class="btn--close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+        <hr>
+        <div class="modal-container">
+            <div class="modal-left-column">
+                <div>
+                    <img class="rules-image" src="../assets/images/rules_easy.png" alt="Rules in easy game">
+                </div>
+                <div>
+                    <p class="text-center">
+                        <span class="color-fire">FIRE</span> &#8921; <span class="color-grass">GRASS</span>
+                        <br><br>
+                        <span class="color-grass">GRASS</span> &#8921; <span class="color-water">WATER</span>
+                        <br><br>
+                        <span class="color-water">WATER</span> &#8921; <span class="color-fire">FIRE</span>
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="modal-middle-column">
+                <div class="rules-description">
+                    <br><br>
+                    <p class="text-center">
+                        In the Pokemon Battle Game, the player fights against the computer.
+                        <br> <br>
+                        In case of a battle between two identical pokemon, the result is a draw.
+                        <br> <br>
+                        The game is won by the person who first wins 20 battles. Good luck in the game!
+                        <br> <br>
+                        Enjoy!
+                    </p>
+                </div>
+
+            </div>
+            <div class="modal-right-column">
+                <div>
+                    <img class="rules-image" src="../assets/images/rules_hard.png" alt="Rules in hard game">
+                </div>
+                <div>
+                    <p class="text-center">
+                        <span class="color-fire">FIRE</span> &#8921; <span class="color-grass">GRASS</span> &#8944;
+                        <span class="color-ice">ICE</span>
+                        <br><br>
+                        <span class="color-grass">GRASS</span> &#8921; <span class="color-rock">ROCK</span> &#8944;
+                        <span class="color-ground">GROUND</span>
+                        <br><br>
+                        <span class="color-rock">ROCK</span> &#8921; <span class="color-ice">ICE</span> &#8944; <span
+                            class="color-fire">FIRE</span>
+                        <br><br>
+                        <span class="color-ice">ICE</span> &#8921; <span class="color-grass">GRASS</span> &#8944; <span
+                            class="color-ground">GROUND</span>
+                        <br><br>
+                        <span class="color-ground">GROUND</span> &#8921; <span class="color-fire">FIRE</span> &#8944;
+                        <span class="color-rock">ROCK</span>
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="../assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/c3a97eb985.js" crossorigin="anonymous"></script>
+</body>
+</html>

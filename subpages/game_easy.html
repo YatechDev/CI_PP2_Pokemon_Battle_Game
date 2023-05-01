@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Pokemon Battle Game!">
+    <meta name="keywords" content="pokemon, pokemon fans, pokemon mini game, pokemon battle, browser game">
+    <meta name="author" content="YatechDev">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <!-- Title -->
+    <title>Pokemon Battle Game - Level Easy</title>
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <div class="game-area">
+        <!-- Top Div -->
+        <div class="top-div">
+            <div>
+                <a href="../index.html">
+                    <button class="btn">HOME</button>
+                </a>
+            </div>
+            <div class="audio-div">
+                <audio id="myAudio">
+                    <source src="../assets/audio/pokemon_theme.mp3" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Click the buttons to play, pause, or stop the audio.</p>
+                <div class="audio-buttons-div">
+                    <button id="playBtn" class="music-btn" type="button"><i class="fa-regular fa-circle-play"></i></button>
+                    <button id="pauseBtn" class="music-btn" type="button"><i class="fa-regular fa-circle-pause"></i>
+                    </button>
+                    <button id="stopBtn" class="music-btn" type="button"><i class="fa-regular fa-circle-stop"></i></button>
+                </div>
+                <br><br>
+                <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+                <label for="volumeSlider">Volume</label>
+            </div>
+            <div>
+                <button id="rules-btn" class="btn">RULES</button>
+            </div>
+        </div>
+        <!-- Middle Div -->
+        <div class="middle-div">
+            <div class="player">
+                <div class="player-score score">
+                    <p>Player: <span id="playerScore">0</span></p>
+                </div>
+                <div id="playerAvatar" class="player-choice avatar">
+                    <img id="playerAvatarImg" src="../assets/images/player_img.png" alt="Player avatar" data-type="0">
+                </div>
+            </div>
+            <div class="result">
+                <div class="game-result avatar">
+                    <span id="battleResult">RESULT</span>
+                </div>
+            </div>
+            <div class="cpu">
+                <div class="cpu-score score">
+                    <p>Computer: <span id="computerScore">0</span></p>
+                </div>
+                <div id="computerAvatar" class="cpu-choice avatar">
+                    <img src="../assets/images/cpu_img.png" alt="Computer avatar" data-type="0">
+                </div>
+            </div>
+        </div>
+        <div class="bottom-div">
+            <div class="pokemon easy">
+                <img class="pokemon-img" src="../assets/images/fire_easy.png" alt="Fire" data-type="Fire">
+            </div>
+            <div class="pokemon easy">
+                <img class="pokemon-img" src="../assets/images/water_easy.png" alt="Grass" data-type="Water">
+            </div>
+            <div class="pokemon easy">
+                <img class="pokemon-img" src="../assets/images/grass_easy.png" alt="Ice" data-type="Grass">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODALS -->
+    <!--     Rules Modal -->
+    <div id="modal-rules" class="modal">
+        <div class="modal-heading">
+            <h2 class="text-center modal-title">RULES</h2>
+            <div>
+                <button id="modal-rules-close" class="btn--close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+        <hr>
+        <div class="modal-container">
+            <div class="modal-left-column">
+                <div>
+                    <img class="rules-image" src="../assets/images/rules_easy.png" alt="Rules in easy game">
+                </div>
+                <div>
+                    <p class="text-center">
+                        <span class="color-fire">FIRE</span> &#8921; <span class="color-grass">GRASS</span>
+                        <br><br>
+                        <span class="color-grass">GRASS</span> &#8921; <span class="color-water">WATER</span>
+                        <br><br>
+                        <span class="color-water">WATER</span> &#8921; <span class="color-fire">FIRE</span>
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="modal-middle-column">
+                <div class="rules-description">
+                    <br><br>
+                    <p class="text-center">
+                        In the Pokemon Battle Game, the player fights against the computer.
+                        <br> <br>
+                        In case of a battle between two identical pokemon, the result is a draw.
+                        <br> <br>
+                        The game is won by the person who first wins 20 battles. Good luck in the game!
+                        <br> <br>
+                        Enjoy!
+                    </p>
+                </div>
+
+            </div>
+            <div class="modal-right-column">
+                <div>
+                    <img class="rules-image" src="../assets/images/rules_hard.png" alt="Rules in hard game">
+                </div>
+                <div>
+                    <p class="text-center">
+                        <span class="color-fire">FIRE</span> &#8921; <span class="color-grass">GRASS</span> &#8944;
+                        <span class="color-ice">ICE</span>
+                        <br><br>
+                        <span class="color-grass">GRASS</span> &#8921; <span class="color-rock">ROCK</span> &#8944;
+                        <span class="color-ground">GROUND</span>
+                        <br><br>
+                        <span class="color-rock">ROCK</span> &#8921; <span class="color-ice">ICE</span> &#8944; <span
+                            class="color-fire">FIRE</span>
+                        <br><br>
+                        <span class="color-ice">ICE</span> &#8921; <span class="color-grass">GRASS</span> &#8944; <span
+                            class="color-ground">GROUND</span>
+                        <br><br>
+                        <span class="color-ground">GROUND</span> &#8921; <span class="color-fire">FIRE</span> &#8944;
+                        <span class="color-rock">ROCK</span>
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- You WON the battle modal -->
+    <div id="modal-won-game" class="modal-won container">
+        <h2>YOU WON !!!!!</h2>
+        <div><img src="../assets/images/player_img.png" alt="Player Avatar"></div>
+        <a href="./game_easy.html">
+            <button class="btn">PLAY AGAIN</button>
+        </a>
+    </div>
+
+    <!-- You LOST the battle modal -->
+    <div id="modal-lost-game" class="modal-lost container">
+        <h2>YOU LOST !</h2>
+        <div><img src="../assets/images/cpu_img.png" alt="Computer Avatar"></div>
+        <a href="./game_easy.html">
+            <button class="btn">PLAY AGAIN</button>
+        </a>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="../assets/js/game-easy.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/c3a97eb985.js" crossorigin="anonymous"></script>
+</body>
+</html>

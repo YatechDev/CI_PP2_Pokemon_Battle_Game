@@ -6,27 +6,27 @@ const pokemonList = [
     {
         name: "Charizard",
         type: "Fire",
-        image: "assets/images/fire_hard.png",
+        image: "../assets/images/fire_hard.png",
     },
     {
         name: "Venusaur",
         type: "Grass",
-        image: "assets/images/grass_hard.png",
+        image: "../assets/images/grass_hard.png",
     },
     {
         name: "Vulpix",
         type: "Ice",
-        image: "assets/images/ice_hard.png",
+        image: "../assets/images/ice_hard.png",
     },
     {
         name: "Cubone",
         type: "Ground",
-        image: "assets/images/ground_hard.png",
+        image: "../assets/images/ground_hard.png",
     },
     {
         name: "Graveler",
         type: "Rock",
-        image: "assets/images/rock_hard.png",
+        image: "../assets/images/rock_hard.png",
     },
 ];
 
@@ -90,7 +90,7 @@ function noWinner() {
     document.getElementById("battleResult").style.color = "#fbdb04";
 }
 
-function playerWin () {
+function playerWin() {
     let playerScore = parseInt(document.getElementById("playerScore").innerText);
     document.getElementById("playerScore").innerText = ++playerScore;
     document.getElementById("battleResult").innerText = "YOU WIN!";
@@ -98,7 +98,7 @@ function playerWin () {
     checkScores()
 }
 
-function computerWin () {
+function computerWin() {
     let computerScore = parseInt(document.getElementById("computerScore").innerText);
     document.getElementById("computerScore").innerText = ++computerScore;
     document.getElementById("battleResult").innerText = "COMPUTER WIN!";
@@ -106,7 +106,7 @@ function computerWin () {
     checkScores()
 }
 
-function checkScores () {
+function checkScores() {
     const modalWon = document.getElementById('modal-won-game');
     const modalLost = document.getElementById('modal-lost-game');
 
