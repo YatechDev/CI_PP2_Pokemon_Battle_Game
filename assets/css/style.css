@@ -413,7 +413,29 @@ GAME AREA
 MEDIA QUERIES
 ========== */
 
-@media (max-width: 544px) {
+
+/* Extra Large Desktop */
+@media screen and (min-width: 1201px) {
+
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+}
+
+/* Tablet and Desktop Landscape */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/* Tablet Portrait */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* Mobile Landscape */
+@media screen and (min-width: 321px) and (max-width: 480px) {
     .container {
         display: flex;
         flex-direction: column;
@@ -424,7 +446,6 @@ MEDIA QUERIES
 
     .intro-image {
         width: 100%;
-
     }
 
     .heading img {
@@ -433,7 +454,7 @@ MEDIA QUERIES
     }
 
     .heading {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .buttons {
@@ -450,7 +471,44 @@ MEDIA QUERIES
         text-align: center;
     }
 
-    /*     .intro-container .left-column img {
-            width: 100%
-        } */
+    .level-img{
+        width: 30rem;
+        filter: grayscale(0);
+    }
+
+    .level-img:hover {
+        transition: none;
+        transform: none;
+        position: relative;
+        z-index: 1;
+    }
+
+    .levels-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .level-description {
+        order: 1;
+    }
+
+    .easy-level {
+        order: 2;
+    }
+
+    .hard-level {
+        order: 3;
+    }
+
+    .level-description :nth-child(6),
+    .level-description :nth-child(7),
+    .level-description :nth-child(8) {
+        display: none;
+    }
+
+}
+
+/* Mobile Portrait */
+@media screen and (max-width: 320px) {
+    /* CSS styles */
 }
