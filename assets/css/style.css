@@ -406,3 +406,49 @@ GAME AREA
 .music-btn:active {
     transform: translateY(4px);
 }
+
+/* ==========
+MEDIA QUERIES
+========== */
+
+@media (max-width: 544px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 1rem;
+    }
+
+    .intro-image {
+        width: 100%;
+
+    }
+
+    .heading img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+
+    .buttons {
+
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        margin: 0 0.5rem;
+        padding: 2rem 3rem;
+    }
+
+    .right-column p {
+        text-align: center;
+    }
+
+    /*     .intro-container .left-column img {
+            width: 100%
+        } */
+}
