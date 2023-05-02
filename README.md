@@ -92,6 +92,9 @@ experience while also offering a new twist on the classic "Rock, Paper, Scissors
 - As a returning user, I want the game to offer rewards or achievements for completing challenges or reaching certain
   milestones, so that I have a sense of progress and accomplishment.
 
+[Back to top &uarr;](#Pokémon-Battle-Game)
+<hr>
+
 ## Design
 
 ### Design Choices
@@ -132,7 +135,8 @@ experience while also offering a new twist on the classic "Rock, Paper, Scissors
 - [Evernote](https://evernote.com/) (notes, screenshots)
 - [Grammarly](https://www.grammarly.com/) (typography)
 
-## Features
+[Back to top &uarr;](#Pokémon-Battle-Game)
+<hr>
 
 ## Validation
 
@@ -184,6 +188,8 @@ I validated each of the three files and no error was found on any of them.
 <img src="docs/validation/validation_404.png" alt="Validation of Hard Game Mode js code">
 </details>
 
+[Back to top &uarr;](#Pokémon-Battle-Game)
+<hr>
 
 ## Testing
 
@@ -263,6 +269,8 @@ The website has been tested on the following browsers:
 - Safari ✅
 - Samsung Internet Browser  ✅
 
+[Back to top &uarr;](#Pokémon-Battle-Game)
+<hr>
 
 ## Bugs
 
@@ -276,4 +284,22 @@ The website has been tested on the following browsers:
 
 ## Credits
 
+1. [CI TEMPLATE](https://github.com/Code-Institute-Org/gitpod-full-template) - This repository was created using the
+   template proposed by Code Institute
+2. [Canva](https://www.canva.com/) - All photos and graphics are from Canva and are used under a license I have. I made
+   most of the graphic elements myself using this program.
+3. [JetBrains](https://www.jetbrains.com/webstorm/) - I use their software - WebStorm - as my main IDE.
+4. [Code Institute](https://codeinstitute.net/) - As the main source of my knowledge.
+5. [Jak zaczac programowac](https://jakzaczacprogramowac.pl/) - Polish youtube channel and discord group with a lot of
+   resources & tips.
+6. [W3Schools](https://www.w3schools.com/), [DailyDev](https://daily.dev/) -
+   As additional places where I often do additional courses or read articles and enrich my knowledge.
+
 ## Acknowledgements
+- To My amazing wife Karolina, who supported me during the whole process of learning and creating the project, allowed
+  me to focus on my work and keep me motivated to act all the time.
+- To my family and friends - for being a great support and for their motivation.
+- The entire Code Institute community on slack for great understanding and motivation every day!
+
+[Back to top &uarr;](#Pokémon-Battle-Game)
+<hr>
