@@ -22,7 +22,7 @@ if (homeButton) {
 // For 404 page - Home Button - taking to main page from 404.html
 const homeButton404 = document.getElementById('home-btn-404');
 if (homeButton404) {
-    homeButton.addEventListener('click', function () {
+    homeButton404.addEventListener('click', function () {
         window.location.href = 'https://yatechdev.github.io/CI_PP2_Pokemon_Battle_Game/';
     });
 }
