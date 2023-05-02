@@ -24,19 +24,18 @@
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
     2. [Frameworks & Tools](#frameworks-&-tools)
-5. [Features](#features)
-6. [Validation](#validation)
-    1. [HTML Validation](#HTML-validation)
-    2. [CSS Validation](#CSS-validation)
-7. [Testing](#testing)
-    1. [Accessibility](#accessibility)
-    2. [Performance](#performance)
-    3. [Device testing](#performing-tests-on-various-devices)
-    4. [Browser compatibility](#browser-compatability)
-8. [Bugs](#Bugs)
-9. [Deployment](#deployment)
-10. [Credits](#credits)
-11. [Acknowledgements](#acknowledgements)
+5. [Validation](#validation)
+    3. [HTML Validation](#HTML-validation)
+    4. [CSS Validation](#CSS-validation)
+6. [Testing](#testing)
+    5. [Accessibility](#accessibility)
+    6. [Performance](#performance)
+    7. [Device testing](#performing-tests-on-various-devices)
+    8. [Browser compatibility](#browser-compatability)
+7. [Bugs](#Bugs)
+8. [Deployment](#deployment)
+9. [Credits](#credits)
+10. [Acknowledgements](#acknowledgements)
 
 ## Project Goals
 
@@ -274,13 +273,30 @@ The website has been tested on the following browsers:
 
 ## Bugs
 
-| **Bug**     | **Fix**        |
-|-------------|----------------|
-| Some bug    | The fix for it |
-| another bug | another fix    |
+| **Bug**                                              | **Fix**                                        | **Result** |
+|------------------------------------------------------|------------------------------------------------|------------|
+| Music in audio element not working on iPhone devices | Add another formats and correct the attributes | Fixed      |
+| Anchor element place inside of button                | Use JavaScript click event for button          | Fixed      |
+| Contrast check failed on game area                   | Change computer score color                    | Fixed      |
+| Wrond path to assets from subpages                   | Corrected path to the files                    | Fixed      |
+| Button Play Again didn't work in end game modal      | Corrected Element's ID in js code              | Fixed      |
 
 
 ## Deployment
+The website was deployed on GitHub by using following steps:
+1. Login into GitHub and locate the repository - [CI_PP2_Pokemon_Battle_Game](https://github.com/YatechDev/CI_PP2_Pokemon_Battle_Game)
+2. At the top of repository locate the "settings" button and click on it.
+3. Now on the left sidebar find locate the "pages" button and click on it.
+4. Under source heading click on the branch dropdown menu and select: master.
+5. Click save.
+6. You will receive link to your deployed repository like on the screen below.
+
+![GitHub Pages](docs/github_pages.png)
+
+Forking the GitHub repository:
+1. Login into GitHub and locate the repository - [CI_PP2_Pokemon_Battle_Game](https://github.com/YatechDev/CI_PP2_Pokemon_Battle_Game)
+2. At the top of repository in right corner locate the "fork" button and click on it.
+3. Choose where you want to save your forked repository.
 
 ## Credits
 
