@@ -139,6 +139,6 @@ if (playAgainWin) {
 const playAgainLost = document.getElementById('play-again-hard2-btn');
 if (playAgainLost) {
     playAgainLost.addEventListener('click', function () {
-        window.location.href = 'hard.html';
+        window.location.href = 'game_hard.html';
     });
 }
