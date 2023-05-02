@@ -548,7 +548,7 @@ MEDIA QUERIES
 }
 
 /* Mobile Landscape & Tablet Portrait */
-@media screen and (min-width: 321px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
 
     .container {
         display: flex;
@@ -562,13 +562,17 @@ MEDIA QUERIES
         width: 100%;
     }
 
+    .intro-description {
+        font-size: 1.4rem;
+    }
+
     .heading img {
         width: 5rem;
         height: 5rem;
     }
 
     .heading {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 
     .buttons {
@@ -578,7 +582,7 @@ MEDIA QUERIES
     .btn {
         font-size: 1.2rem;
         margin: 0 0.5rem;
-        padding: 2rem 3rem;
+        padding: 1.2rem 2.2rem;
     }
 
     .btn a {
