@@ -95,7 +95,7 @@ function computerWin() {
     let computerScore = parseInt(document.getElementById("computerScore").innerText);
     document.getElementById("computerScore").innerText = ++computerScore;
     document.getElementById("battleResult").innerText = "COMPUTER WIN!";
-    document.getElementById("battleResult").style.color = "#9d0202";
+    document.getElementById("battleResult").style.color = "#EFAEAE";
     checkScores()
 }
 
