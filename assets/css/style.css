@@ -50,6 +50,7 @@ body {
     width: 7rem;
 }
 
+/* This container is used in various places across the site */
 .container {
     max-width: 160rem;
     display: flex;
@@ -82,8 +83,6 @@ body {
 
 .btn {
     display: block;
-    /*width: 100%;*/
-    /*height: 100%;*/
     text-align: center;
     cursor: pointer;
     background-color: #1f3290;
@@ -104,28 +103,6 @@ body {
 
 .btn:active {
     transform: translateY(4px);
-}
-
-.btn a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    width: 100%;
-    height: 100%;
-}
-
-.btn a:hover {
-    color: #1f3290;
-}
-
-.btn a:active {
-    text-decoration: none;
-    color: #1f3290;
-}
-
-.btn a:visited {
-    text-transform: none;
-    text-decoration: none;
 }
 
 .level-img {
@@ -197,6 +174,7 @@ body {
     width: 50%;
 }
 
+/* Class used by js events to make modal visible */
 .modal.visible {
     display: block;
 }
@@ -277,7 +255,6 @@ body {
 /* ==========
 GAME AREA
 ========== */
-
 .game-area {
     max-width: 180rem;
     display: flex;
@@ -402,8 +379,7 @@ GAME AREA
     color: #5d0101;
 }
 
-/* Audio */
-
+/* AUDIO */
 .audio-div {
     display: grid;
     margin: 0 auto;
@@ -437,6 +413,7 @@ GAME AREA
     transform: translateY(4px);
 }
 
+/* FOOTER */
 footer {
     display: flex;
     justify-content: center;
@@ -467,6 +444,7 @@ footer a:visited {
     text-decoration: none;
 }
 
+/* 404 PAGE */
 .page-404 {
     display: flex;
     flex-direction: column;
@@ -618,10 +596,6 @@ MEDIA QUERIES
         font-size: 1.2rem;
         margin: 0 0.5rem;
         padding: 1.2rem 2.2rem;
-    }
-
-    .btn a {
-        width: 100%;
     }
 
     .right-column p {
@@ -792,13 +766,6 @@ MEDIA QUERIES
     .modal-middle-column,
     .modal-right-column{
         font-size: 1.5rem;
-    }
-
-    .modal-left-column div,
-    .modal-middle-column div,
-    .modal-right-column div {
-        /*justify-content: center;*/
-        /*align-items: center;*/
     }
 
     .rules-image {
