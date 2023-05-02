@@ -354,7 +354,7 @@ GAME AREA
 }
 
 .cpu-score p {
-    color: #9d0202;
+    color: #5d0101;
 }
 
 .game-result {
@@ -399,7 +399,7 @@ GAME AREA
 }
 
 .modal-lost {
-    color: darkred;
+    color: #5d0101;
 }
 
 /* Audio */
