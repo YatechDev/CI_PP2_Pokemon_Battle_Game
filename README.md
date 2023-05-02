@@ -137,9 +137,54 @@ experience while also offering a new twist on the classic "Rock, Paper, Scissors
 
 ## Validation
 
-### HTML Validation
+### HTML Validation 
+I used "W3C Markup Validation Service" to validate the code. 
+I validated each of the subpages and no error was found on any of them.
+
+<details><summary>Home ✅</summary>
+<img src="docs/validation/validation_index.png" alt="Validation of Home-Page">
+</details>
+
+<details><summary>Game Levels ✅</summary>
+<img src="docs/validation/validation_game_levels.png" alt="Validation of Game Level Option">
+</details>
+
+<details><summary>Easy Game Mode ✅</summary>
+<img src="docs/validation/validation_game_easy.png" alt="Validation of Easy Game Mode">
+</details>
+
+<details><summary>Hard Game Mode ✅</summary>
+<img src="docs/validation/validation_game_hard.png" alt="Validation of Hard Game Mode">
+</details>
+
+<details><summary>404 ✅</summary>
+<img src="docs/validation/validation_404.png" alt="Validation of 404-page">
+</details>
 
 ### CSS Validation
+I used "W3C CSS Validation Service" to validate the CSS code.
+No error was found.
+
+<details><summary>CSS ✅</summary>
+<img src="docs/validation/validation_my_css.png" alt="Validation of CSS code">
+</details>
+
+### JavaScript Validation
+I used "JSHint" to validate the code.
+I validated each of the three files and no error was found on any of them.
+
+<details><summary>Main js ✅</summary>
+<img src="docs/validation/validation_js_main.png" alt="Validation of main.js code">
+</details>
+
+<details><summary>Easy Game Mode js ✅</summary>
+<img src="docs/validation/validation_game_hard.png" alt="Validation of Easy Game Mode js code">
+</details>
+
+<details><summary>Hard Game Mode js ✅</summary>
+<img src="docs/validation/validation_404.png" alt="Validation of Hard Game Mode js code">
+</details>
+
 
 ## Testing
 
