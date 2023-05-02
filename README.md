@@ -33,7 +33,6 @@
     2. [Performance](#performance)
     3. [Device testing](#performing-tests-on-various-devices)
     4. [Browser compatibility](#browser-compatability)
-    5. [Testing user stories](#testing-user-stories)
 8. [Bugs](#Bugs)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
@@ -189,14 +188,81 @@ I validated each of the three files and no error was found on any of them.
 ## Testing
 
 ### Accessibility
+I used "The WAVE WebAIM web accessibility evaluation tool" to test the code for accessibility and there is no errors
+across the website.
+
+<details><summary>Home ✅</summary>
+<img src="docs/accessibility/access_index.png" alt="Accessibility of Home-Page">
+</details>
+
+<details><summary>Game Levels ✅</summary>
+<img src="docs/accessibility/access_game_levels.png" alt="Accessibility of Game Levels">
+</details>
+
+<details><summary>Easy Game Mode ✅</summary>
+<img src="docs/accessibility/access_game_easy.png" alt="Accessibility of Easy Game Mode">
+</details>
+
+<details><summary>Hard Game Mode ✅</summary>
+<img src="docs/accessibility/access_game_hard.png" alt="Accessibility of Hard Game Mode">
+</details>
+
+<details><summary>404 ✅</summary>
+<img src="docs/accessibility/access_404.png" alt="Accessibility of 404-Page">
+</details>
 
 ### Performance
 
+To test the performance on the website, I used Google Lighthouse in Google Chrome Developer Tools.
+The test was carried out on index.html and all subpages. 
+Below is a list of screenshots:
+
+<details><summary>Home</summary>
+<img src="docs/performance/performance_home.png" alt="Performance of Home-Page">
+</details>
+
+<details><summary>Game Levels</summary>
+<img src="docs/performance/performance_game_levels.png" alt="Performance of Game Levels Page">
+</details>
+
+<details><summary>About</summary>
+<img src="docs/performance/performance_game_easy.png" alt="Performance of Game Easy Mode page">
+</details>
+
+<details><summary>About - mobiles</summary>
+<img src="docs/performance/performance_game_hard.png" alt="Performance of Game Hard Mode Page">
+</details>
+
+<details><summary>Menu</summary>
+<img src="docs/performance/performance_404.png" alt="Performance of 404-Page">
+</details>
+
 ### Performing tests on various devices
+Laptops
+- MSI Katana GF76 17.3" ✅
+- ASUS TUF Dash F15 15.6" ✅
+- ASUS E210MA 11.6" ✅
+
+Apple mobiles
+- iPhone 14 PRO ✅
+- iPhone 11 PRO ✅
+- iPhone XR ✅
+
+Android devices
+- Xiaomi Redmi Note 9 ✅
+- Samsung A51 ✅
+- Samsung Galaxy Tab A (landscape & portrait mode) ✅
 
 ### Browser compatability
+The website has been tested on the following browsers:
+- Google Chrome ✅
+- Chromium ✅
+- Mozilla Firefox ✅
+- Opera ✅
+- Microsoft Edge ✅
+- Safari ✅
+- Samsung Internet Browser  ✅
 
-### Testing user stories
 
 ## Bugs
 
