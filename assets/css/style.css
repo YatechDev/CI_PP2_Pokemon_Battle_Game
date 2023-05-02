@@ -487,6 +487,33 @@ MEDIA QUERIES
         z-index: 1;
     }
 
+    .modal-won,
+    .modal-lost {
+        max-width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding: 2rem 0;
+    }
+
+    .modal-won div,
+    .modal-lost div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal-won div img,
+    .modal-lost div img {
+        width: 70%;
+
+    }
+
+    .modal-won button,
+    .modal-lost button {
+        width: 60%;
+        font-size: 2rem;
+    }
 }
 
 /* Mobile Landscape & Tablet Portrait */
@@ -644,5 +671,34 @@ MEDIA QUERIES
     .game-rules-btn {
         margin: 1rem;
     }
+
+    .modal-won,
+    .modal-lost {
+        max-width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding: 2rem 0;
+    }
+
+    .modal-won div,
+    .modal-lost div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal-won div img,
+    .modal-lost div img {
+        width: 70%;
+
+    }
+
+    .modal-won button,
+    .modal-lost button {
+        width: 60%;
+        font-size: 2rem;
+    }
+
 }
 
