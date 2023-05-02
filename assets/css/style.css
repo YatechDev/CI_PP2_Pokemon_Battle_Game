@@ -441,19 +441,51 @@ GAME AREA
 MEDIA QUERIES
 ========== */
 
+/* Tablet and Laptop */
+@media screen and (min-width: 769px) and (max-width: 1400px) {
 
-/* Extra Large Desktop */
-@media screen and (min-width: 1201px) {
+    .intro-image {
+        width: 80%;
+    }
 
-}
+    .intro-container p {
+        font-size: 2rem;
+    }
 
-/* Large Desktop */
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .heading img {
+        width: 8rem;
+        height: 8rem;
+    }
 
-}
+    .heading {
+        font-size: 3.5rem;
+    }
 
-/* Tablet and Desktop Landscape */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .buttons {
+        gap: 0;
+    }
+
+    .btn {
+        font-size: 2rem;
+        margin: 0 0.5rem;
+        padding: 2rem 3rem;
+    }
+
+    .right-column p {
+        text-align: center;
+    }
+
+    .level-img{
+        width: 30rem;
+        filter: grayscale(0);
+    }
+
+    .level-img:hover {
+        transition: none;
+        transform: none;
+        position: relative;
+        z-index: 1;
+    }
 
 }
 
@@ -612,10 +644,5 @@ MEDIA QUERIES
     .game-rules-btn {
         margin: 1rem;
     }
-
 }
 
-/* Mobile Portrait */
-@media screen and (max-width: 320px) {
-    /* CSS styles */
-}
