@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
     pokemonImgs.forEach((pokemon) => {
         pokemon.addEventListener("click", () => {
             let imgSrc = pokemon.querySelector("img").getAttribute("src",);
-            let imgSrc2 = pokemon.querySelector("img").getAttribute("data-type")
+            let imgSrc2 = pokemon.querySelector("img").getAttribute("data-type");
             playerAvatar.querySelector("img").setAttribute("src", imgSrc);
             playerAvatar.querySelector("img").setAttribute("data-type", imgSrc2);
-            computerPick()
-            battle()
+            computerPick();
+            battle();
         });
     });
 });
@@ -61,16 +61,16 @@ function battle() {
 
     if (playerChoice === computerChoice) {
         console.log("Same Pokemons!");
-        noWinner()
+        noWinner();
     } else if (
         playerChoice === "Fire" && computerChoice === "Grass" ||
         playerChoice === "Grass" && computerChoice === "Water" ||
         playerChoice === "Water" && computerChoice === "Fire"
     ) {
-        console.log("Player Win!")
+        console.log("Player Win!");
         playerWin();
     } else {
-        console.log("Computer Win!")
+        console.log("Computer Win!");
         computerWin();
     }
 }
@@ -87,7 +87,7 @@ function playerWin() {
     document.getElementById("playerScore").innerText = ++playerScore;
     document.getElementById("battleResult").innerText = "YOU WIN!";
     document.getElementById("battleResult").style.color = "#41dc0d";
-    checkScores()
+    checkScores();
 }
 
 //Function to increase computer score and changing "RESULT" span
@@ -96,7 +96,7 @@ function computerWin() {
     document.getElementById("computerScore").innerText = ++computerScore;
     document.getElementById("battleResult").innerText = "COMPUTER WIN!";
     document.getElementById("battleResult").style.color = "#EFAEAE";
-    checkScores()
+    checkScores();
 }
 
 // Function to open end game modal based on game winner
