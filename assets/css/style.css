@@ -562,6 +562,10 @@ MEDIA QUERIES
     .rules-image {
         width: 90%;
     }
+
+    .yatech-div img {
+        width: 80%;
+    }
 }
 
 /* Mobile Landscape & Tablet Portrait */
@@ -789,6 +793,14 @@ MEDIA QUERIES
     .pokemon-circle {
         display: flex;
         justify-content: center;
+    }
+
+    .yatech-div {
+        margin: 2rem;
+    }
+
+    .yatech-div img {
+        width: 80%;
     }
 }
 
