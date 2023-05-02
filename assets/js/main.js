@@ -1,7 +1,7 @@
 /*
 * BUTTONS
  */
-const StartButton = document.querySelector('#start-btn');
+const StartButton = document.getElementById('start-btn');
 
 if (StartButton) {
     StartButton.addEventListener('click', function () {
