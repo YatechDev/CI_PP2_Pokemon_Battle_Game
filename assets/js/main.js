@@ -5,7 +5,7 @@ const StartButton = document.getElementById('start-btn');
 
 if (StartButton) {
     StartButton.addEventListener('click', function () {
-        window.location.href = '../subpages/game_levels.html';
+        window.location.href = 'subpages/game_levels.html';
     });
 }
 
