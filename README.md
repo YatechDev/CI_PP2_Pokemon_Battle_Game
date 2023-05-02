@@ -4,7 +4,20 @@
 
 ![Mockup image](docs/responsiveness.png)
 
-[Pokemon Battle Game - Live webpage](https://yatechdev.github.io/CI_PP2_Pokemon_Battle_Game/index.html) (Right click to open in new tab)
+[Pokemon Battle Game - Live webpage](https://yatechdev.github.io/CI_PP2_Pokemon_Battle_Game/index.html) (Right click to
+open in new tab)
+
+My second portfolio project for Code Institute where I study for a diploma - LVL 5 in Full Stack Software Development.
+
+The aim of this project is to demonstrate skills in HTML, CSS and JavaScript and only these languages were used in the
+development. No frameworks or other languages have been used apart from the parts used to Code Institute Template.
+
+The website is responsive to lower screen resolutions, tablets and mobile phones.
+It is also compatible with all popular web browsers.
+
+The website is divided into subpages, but all of them are consistent, simple and pleasant to navigate.
+It contains easy & fun to view elements and all the necessary information, such as the game rules & author details.
+
 
 ## Table of Content
 
@@ -16,11 +29,6 @@
     2. [User Requirements and Expectations](#user-requirements-and-expectations)
     3. [User Stories](#user-stories)
 3. [Design](#design)
-    1. [Design Choices](#design-choices)
-    2. [Colour](#colour)
-    3. [Fonts](#fonts)
-    4. [Structure](#structure)
-    5. [Wireframes](#wireframes)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
     2. [Frameworks & Tools](#frameworks-&-tools)
@@ -96,15 +104,9 @@ experience while also offering a new twist on the classic "Rock, Paper, Scissors
 
 ## Design
 
-### Design Choices
 
-### Colour
 
-### Fonts
-
-### Structure
-
-### Wireframes
+[Back to top &uarr;](#Pokémon-Battle-Game)
 
 ## Technologies Used
 
