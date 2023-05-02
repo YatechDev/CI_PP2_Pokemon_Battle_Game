@@ -545,6 +545,24 @@ MEDIA QUERIES
         width: 60%;
         font-size: 2rem;
     }
+
+    .modal {
+        width: 80%;
+    }
+
+    .modal-title {
+        font-size: 1.5rem;
+    }
+
+    .modal-left-column,
+    .modal-middle-column,
+    .modal-right-column{
+        font-size: 1.5rem;
+    }
+
+    .rules-image {
+        width: 90%;
+    }
 }
 
 /* Mobile Landscape & Tablet Portrait */
@@ -737,6 +755,41 @@ MEDIA QUERIES
     .modal-lost button {
         width: 60%;
         font-size: 2rem;
+    }
+
+    .modal {
+        width: 80%;
+        position: relative;
+    }
+
+    .modal-container {
+        flex-direction: column;
+    }
+
+    .modal-title {
+        font-size: 1.5rem;
+    }
+
+    .modal-left-column,
+    .modal-middle-column,
+    .modal-right-column{
+        font-size: 1.5rem;
+    }
+
+    .modal-left-column div,
+    .modal-middle-column div,
+    .modal-right-column div {
+        /*justify-content: center;*/
+        /*align-items: center;*/
+    }
+
+    .rules-image {
+        width: 90%;
+    }
+
+    .pokemon-circle {
+        display: flex;
+        justify-content: center;
     }
 
 }
