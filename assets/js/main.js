@@ -1,4 +1,22 @@
 /*
+* BUTTONS
+ */
+const StartButton = document.querySelector('#start-btn');
+
+if (StartButton) {
+    StartButton.addEventListener('click', function () {
+        window.location.href = '../subpages/game_levels.html';
+    });
+}
+
+const homeButton = document.getElementById('home-btn');
+if (homeButton) {
+    homeButton.addEventListener('click', function () {
+        window.location.href = '../index.html';
+    });
+}
+
+/*
 * MODALS
  */
 
