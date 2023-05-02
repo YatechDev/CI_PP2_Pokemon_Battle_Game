@@ -581,6 +581,10 @@ MEDIA QUERIES
         padding: 2rem 3rem;
     }
 
+    .btn a {
+        width: 100%;
+    }
+
     .right-column p {
         text-align: center;
     }
