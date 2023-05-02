@@ -108,8 +108,30 @@ experience while also offering a new twist on the classic "Rock, Paper, Scissors
 ## Technologies Used
 
 ### Languages
+- HTML 5
+- CSS 3
+- JavaScript
 
 ### Frameworks & Tools
+- [Balsamiq](https://balsamiq.com/) (create wireframes for the project)
+- [GitHub](https://github.com/) (create, hold and deploy repository)
+- [Git](https://git-scm.com/) (source code management)
+- [WebStorm](https://www.jetbrains.com/webstorm/) (IDE use to build the website)
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) (checking & testing the site)
+- [W3C HTML Validator](https://validator.w3.org/) (validation of HTML code)
+- [W3C JigSaw Validator](https://jigsaw.w3.org/css-validator/) (validation of CSS code)
+- [JSHint](https://jshint.com/) (validation of JavaScript code)
+- [Webaim](https://wave.webaim.org/) (accessibility & contrast checker)
+- [Am I Responsive](https://ui.dev/amiresponsive) (website mockup)
+- [Canva](https://www.canva.com/) (images edit, logo & other graphic elements)
+- [Paint](https://www.getpaint.net/index.html) (images edit)
+- [Freeconvert](https://www.freeconvert.com/jpg-to-webp) (convert jpg to webp format)
+- [TinyPNG](https://tinypng.com/) (compress images)
+- [Google Fonts](https://fonts.google.com/) (fonts)
+- [Font Awesome](https://fontawesome.com/) (icons)
+- [Favicon.io](https://favicon.io/) (favicon)
+- [Evernote](https://evernote.com/) (notes, screenshots)
+- [Grammarly](https://www.grammarly.com/) (typography)
 
 ## Features
 
