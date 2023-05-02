@@ -1,6 +1,8 @@
 /*
 * BUTTONS
  */
+
+// Start button - taking to game level choice
 const StartButton = document.getElementById('start-btn');
 
 if (StartButton) {
@@ -9,6 +11,7 @@ if (StartButton) {
     });
 }
 
+// Home Button - taking to index.html
 const homeButton = document.getElementById('home-btn');
 if (homeButton) {
     homeButton.addEventListener('click', function () {
@@ -20,6 +23,7 @@ if (homeButton) {
 * MODALS
  */
 
+//Rules Modal - it will open after click the Rules Button and close after click on red cross
 const modalRules = document.getElementById('modal-rules');
 const openRules = document.getElementById('rules-btn');
 const closeRules = document.getElementById('modal-rules-close');
@@ -40,6 +44,7 @@ if (modalRules) {
     });
 }
 
+//Author Modal - it will open after click the Author Button and close after click on red cross
 const modalAuthor = document.getElementById('modal-author');
 const openAuthor = document.getElementById('author-btn');
 const closeAuthor = document.getElementById('modal-author-close');

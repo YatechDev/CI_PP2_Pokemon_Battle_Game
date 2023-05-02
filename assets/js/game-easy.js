@@ -20,6 +20,7 @@ const pokemonList = [
     },
 ];
 
+// Function which allow player to choose his pokemon to fight and changing player avatar image
 document.addEventListener("DOMContentLoaded", function () {
     let playerAvatar = document.getElementById("playerAvatar");
     let pokemonImgs = document.querySelectorAll(".pokemon");
@@ -37,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Computer choose his pokemon
+// Computer choose his pokemon, taking from the array, then changing picture of Computer Avatar
 function computerPick() {
     let randomPokemon = Math.floor(Math.random() * pokemonList.length);
     let computerChoice = pokemonList[randomPokemon];
@@ -53,6 +54,7 @@ function computerPick() {
     return computerChoice;
 }
 
+// Function to compare choosen Pokemon and decide which win
 function battle() {
     let playerChoice = document.querySelector("#playerAvatar > img").getAttribute("data-type");
     let computerChoice = document.querySelector("#computerAvatar").getAttribute("data-type");
@@ -73,11 +75,13 @@ function battle() {
     }
 }
 
+//Function to changing "RESULT" span in game area
 function noWinner() {
     document.getElementById("battleResult").innerText = "DRAW!";
     document.getElementById("battleResult").style.color = "#fbdb04";
 }
 
+//Function to increase player score and changing "RESULT" span
 function playerWin() {
     let playerScore = parseInt(document.getElementById("playerScore").innerText);
     document.getElementById("playerScore").innerText = ++playerScore;
@@ -86,6 +90,7 @@ function playerWin() {
     checkScores()
 }
 
+//Function to increase computer score and changing "RESULT" span
 function computerWin() {
     let computerScore = parseInt(document.getElementById("computerScore").innerText);
     document.getElementById("computerScore").innerText = ++computerScore;
@@ -94,6 +99,7 @@ function computerWin() {
     checkScores()
 }
 
+// Function to open end game modal based on game winner
 function checkScores() {
     const modalWon = document.getElementById('modal-won-game');
     const modalLost = document.getElementById('modal-lost-game');
