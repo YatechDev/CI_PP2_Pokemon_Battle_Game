@@ -763,9 +763,8 @@ MEDIA QUERIES
 
     .modal {
         width: 80%;
-        position: fixed;
+        position: relative;
         background: rgba(31, 50, 144, 1.65);
-        top: 200px
     }
 
     .modal-container {
