@@ -103,8 +103,27 @@ experience while also offering a new twist on the classic "Rock, Paper, Scissors
 <hr>
 
 ## Design
+![Game Design](docs/design/design_home.png)
 
+The design of the game is intuitive, responsive, and visually appealing to our target audience. I wanted the game
+interface to be user-friendly, with clear instructions and simple navigation, so that players can quickly understand the
+rules and start playing without any confusion. The game is designed to be responsive and optimized for different
+devices, such as computers, tablets, and mobile phones, ensuring accessibility for all players.
 
+To create a nostalgic and familiar experience for Pokémon fans, we incorporated elements of the franchise, such as
+colors, characters, and logos, into the visual design. I also added different levels of difficulty, which are
+represented through unique character designs and backgrounds, providing players with a sense of difficulty and
+accomplishment.
+
+![Game Design](docs/design/design_game_levels.png)
+![Game Design](docs/design/design_rules.png)
+
+I wanted the game to be visually engaging and fast-paced to keep players interested and entertained throughout the
+gameplay experience. I am not a designer but still I worked hard to create a fun and enjoyable experience for players,
+while also remaining true to our project goals and target audience. Overall, the design of our game is tailored to 
+provide a satisfying and immersive gaming experience for players of all ages and skill levels.
+
+![Game Design](docs/design/design_game.png)
 
 [Back to top &uarr;](#Pokémon-Battle-Game)
 
