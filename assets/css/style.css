@@ -56,7 +56,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 3.2rem;
-    margin: 2rem 1rem;
+    margin: 2rem auto;
     background-color: #1f4690;
     border: 2px solid #231955;
     border-radius: 1.5rem;
