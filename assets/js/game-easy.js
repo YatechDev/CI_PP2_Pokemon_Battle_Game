@@ -110,3 +110,24 @@ function checkScores() {
         modalLost.classList.add('visible');
     }
 }
+
+/*
+* Buttons to play again
+* The "play again" button appears in two different modals (win and lose), therefore they have different IDs and two functions are created for them.
+*/
+
+//Play Again when win
+const playAgainWin = document.getElementById('play-again-easy-btn');
+if (playAgainWin) {
+    playAgainWin.addEventListener('click', function () {
+        window.location.href = 'game_easy.html';
+    });
+}
+
+//Play Again when loose
+const playAgainLost = document.getElementById('play-again-easy2-btn');
+if (playAgainLost) {
+    playAgainLost.addEventListener('click', function () {
+        window.location.href = 'game_easy.html';
+    });
+}

@@ -3,10 +3,9 @@
  */
 
 // Start button - taking to game level choice
-const StartButton = document.getElementById('start-btn');
-
-if (StartButton) {
-    StartButton.addEventListener('click', function () {
+const startButton = document.getElementById('start-btn');
+if (startButton) {
+    startButton.addEventListener('click', function () {
         window.location.href = 'subpages/game_levels.html';
     });
 }
